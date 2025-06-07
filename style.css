@@ -173,18 +173,19 @@ img {
     max-width: 41ch;
 }
 
-.info {
+.small-text {
     margin-block-start: var(--small-gap);
-}
-
-p.small-text {
-    margin-block-start: var(--small-gap);
-    font-size: calc(var(--text) * .75);
+    font-size: calc(var(--text) * .7);
     font-weight: 800;
 }
 
 .small-text.lighter {
     font-weight: 500;
+}
+
+.info .small-text {
+    margin-block-start: var(--small-gap);
+    font-size: calc(var(--text) * .8);
 }
 
 p,li {
@@ -280,7 +281,7 @@ hr {
         padding: calc(var(--gap) * 2) 0;
     }
     .stackable {
-        --text: clamp(1.25rem,3vw,1.7rem);
+        --text: clamp(1.4rem,3vw,1.7rem);
     }
     .stackable  {
         font-size: var(--text);
