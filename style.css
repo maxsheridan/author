@@ -116,11 +116,6 @@ header, footer {
     width: 100%;
 }
 
-.site-title {
-    font-size: calc(var(--text) * .9);
-    font-weight: 800;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -198,10 +193,6 @@ p,li {
 
 li {
     list-style: none;
-}
-
-footer a {
-    font-weight: 500;
 }
 
 h2, h1 {
