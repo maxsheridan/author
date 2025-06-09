@@ -1,16 +1,17 @@
 {
-    "name": "Weird Bubba Studio",
+    "name": "Max Sheridan",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#FBFAF7",
+    "theme_color": "#FBFAF7",
     "icons": [
         {
-            "src": "/icons/icon_192.png",
+            "src": "/assets/icons/icon_192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/icons/icon_512.png",
+            "src": "/assets/icons/icon_512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
