@@ -282,8 +282,6 @@ hr {
     }
     .stackable {
         --text: clamp(1.275rem,3vw,1.7rem);
-    }
-    .stackable  {
         font-size: var(--text);
     }
     .review.feature {
