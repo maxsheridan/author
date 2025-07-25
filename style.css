@@ -291,4 +291,7 @@ hr {
         max-width: 400px;
         margin: 0 auto var(--small-gap);
     }
+    img {
+        max-width: 90%;
+    }
 }
