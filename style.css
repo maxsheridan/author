@@ -252,6 +252,16 @@ hr {
     height: clamp(calc(48px * .76),3vw,48px)
 }
 
+.thin-space {
+    display: inline-block;
+    width: clamp(.45rem,3vw,.5rem);
+}
+
+.space {
+    display: inline-block;
+    width: clamp(.9rem,3vw,1rem);
+}
+
 .skip-link {
     position: absolute;
     top: -999px;
