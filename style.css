@@ -259,7 +259,7 @@ hr {
 
 .space {
     display: inline-block;
-    width: clamp(.9rem,3vw,1rem);
+    width: clamp(.7rem,3vw,.75rem);
 }
 
 .skip-link {
