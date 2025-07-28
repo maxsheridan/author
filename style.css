@@ -15,8 +15,7 @@
 }
 
 :root {
-    --gap: clamp(2rem,4vw,2.5rem);
-    --small-gap: calc(var(--gap) * .5);
+    --gap: clamp(1.8rem,4vw,2rem);
     --padding: 3rem 1rem;
     --font: 'Unica77',system-ui,sans-serif;
     --text: clamp(1.275rem,1.6vw,1.7rem);
