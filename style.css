@@ -133,6 +133,7 @@ header, footer {
     gap: var(--small-gap);
     width: 100%;
     font-family: var(--micro);
+    font-size: calc(var(--font-size) * 1.25);
     text-transform: uppercase;
 }
 
@@ -305,7 +306,7 @@ hr {
         padding: calc(var(--gap) * 2) 0;
     }
     .stackable {
-        --text: clamp(1.275rem,3vw,1.7rem);
+        --font-size: clamp(1.275rem,3vw,1.7rem);
         font-size: var(--font-size);
     }
     .review.feature {
