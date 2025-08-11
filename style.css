@@ -133,8 +133,11 @@ header, footer {
     gap: var(--small-gap);
     width: 100%;
     font-family: var(--micro);
-    font-size: calc(var(--font-size) * 1.25);
     text-transform: uppercase;
+}
+
+header {
+    font-size: calc(var(--font-size) * 1.25);
 }
 
 main {
