@@ -300,3 +300,9 @@ hr {
         max-width: 90%;
     }
 }
+
+@media(max-width: 768px){
+    .big-screen {
+        display: none;
+    }
+}
