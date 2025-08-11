@@ -73,11 +73,11 @@ main * + * {
 }
 
 li + li {
-    margin-block-start: calc(var(--small-gap) * .5);
+    margin-block-start: calc(var(--gap) * .25);
 }
 
 .blurb + .blurb {
-     margin-block-start: calc(var(--gap) * 1.45);
+     margin-block-start: calc(var(--gap) * 1.5);
 }
 
 section + section {
@@ -285,13 +285,11 @@ hr {
     top: -999px;
     left: 50%;
     transform: translateX(-50%);    
-    font-size: var(--small-text);
     color: var(--primary-color);
 }   
 
 .skip-link:focus {
     top: 6px;
-    font-size: var(--font-size);
     color: var(--primary-color);
 } 
 
@@ -321,6 +319,9 @@ hr {
     }
     img {
         max-width: 90%;
+    }
+    .feature .blurb {
+        margin-block-end: calc(var(--gap) * 1.45);
     }
 }
 
