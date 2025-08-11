@@ -77,7 +77,7 @@ li + li {
 }
 
 .blurb + .blurb {
-     margin-block-start: calc(var(--gap) * 1.5);
+    margin-block-start: calc(var(--gap) * 1.5);
 }
 
 section + section {
@@ -320,8 +320,8 @@ hr {
     img {
         max-width: 90%;
     }
-    .feature .blurb {
-        margin-block-end: calc(var(--gap) * 1.45);
+    section:first-of-type .blurbs {
+        margin-block-start: calc(var(--gap) * 1.5);
     }
 }
 
