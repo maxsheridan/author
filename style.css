@@ -81,7 +81,7 @@ li + li {
 }
 
 article + article {
-        margin-block-start: calc(var(--gap) * 1.5);
+        margin-block-start: calc(var(--gap) * 1.4);
 }
 
 html {
