@@ -72,12 +72,16 @@ main * + * {
     margin-block-start: 0;
 }
 
+.bottom .blurb, section:last-of-type .blurb + .blurb {
+    margin-block-start: calc(var(--gap) * 2);
+}
+
 li + li {
     margin-block-start: calc(var(--gap) * .4);
 }
 
-.bottom .blurb, section:last-of-type .blurb + .blurb {
-    margin-block-start: calc(var(--gap) * 2);
+article + article {
+        margin-block-start: calc(var(--gap) * 1.5);
 }
 
 html {
