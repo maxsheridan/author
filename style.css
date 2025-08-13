@@ -24,7 +24,7 @@
 
 :root {
     --gap: clamp(1rem,4vw,1.25rem);
-    --small-gap: calc(var(--gap) * .6);
+    --small-gap: calc(var(--gap) * .8);
     --padding: 3rem 1rem;
     --body: 'Unica77',system-ui,sans-serif;
     --micro: 'Big Shoulders 18',system-ui,sans-serif;
