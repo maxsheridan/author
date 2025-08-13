@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Unica77';
     src: url('/assets/type/Unica77-Regular.woff2') format('woff2');
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -104,7 +104,7 @@ body {
     margin: unset;
     font-family: var(--body);
     font-size: var(--font-size);
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     line-height: var(--line-height);
     color: var(--primary-color);
