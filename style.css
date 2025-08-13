@@ -81,7 +81,7 @@ h2 + .blurb, h1 + * + *, article + article {
 }
 
 li + li {
-    margin-block-start: calc(var(--gap) * .4);
+    margin-block-start: calc(var(--gap) * .5);
 }
 
 html {
@@ -203,7 +203,7 @@ img {
 }
 
 p,li {
-    max-width: 60ch;
+    max-width: 57ch;
 }
 
 li {
