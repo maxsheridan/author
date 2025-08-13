@@ -29,7 +29,7 @@
     --body: 'Unica77',system-ui,sans-serif;
     --micro: 'Big Shoulders 18',system-ui,sans-serif;
     --heading: 'Big Shoulders 36',system-ui,sans-serif;
-    --font-size: clamp(1.275rem,1.65vw,1.7rem);
+    --font-size: clamp(1.3rem,1.65vw,1.7rem);
     --line-height: 1.5;
     --primary-color: #161718;
     --highlight-color: blue;
@@ -297,7 +297,7 @@ hr {
 
 @media(max-width: 1170px){   
     .stackable {
-        --font-size: clamp(1.275rem,3vw,1.7rem);
+        --font-size: clamp(1.3rem,3vw,1.7rem);
         font-size: var(--font-size);
     }
     .review.feature {
