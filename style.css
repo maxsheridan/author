@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Unica77';
-    src: url('/assets/type/Unica77-Medium.woff2') format('woff2');
+    src: url('/assets/type/Unica77-Regular.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 :root {
     --gap: clamp(1rem,4vw,1.25rem);
-    --small-gap: calc(var(--gap) * .8);
+    --small-gap: calc(var(--gap) * .6);
     --padding: 3rem 1rem;
     --body: 'Unica77',system-ui,sans-serif;
     --micro: 'Big Shoulders 18',system-ui,sans-serif;
@@ -183,17 +183,17 @@ img {
 }
 
 .blurb p {
-    max-width: 48ch;
+    max-width: 47.5ch;
 }
 
 .blurb.short p {
-    max-width: 41ch;
+    max-width: 40ch;
 }
 
 .small-text {
     margin-block-start: var(--small-gap);
     font-family: var(--micro);
-    font-size: calc(var(--font-size) * .85);
+    font-size: calc(var(--font-size) * .8);
 }
 
 .info .small-text {
