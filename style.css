@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Unica77';
-    src: url('/assets/type/Unica77-Regular.woff2') format('woff2');
+    font-family: 'A2 Gothic';
+    src: url('/assets/type/A2RecordGothic-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -25,10 +25,10 @@
 :root {
     --gap: clamp(1.13rem,4vw,1.25rem);
     --padding: 3rem 1rem;
-    --body: 'Unica77',system-ui,sans-serif;
+    --body: 'A2 Gothic',system-ui,sans-serif;
     --micro: 'Big Shoulders 18',system-ui,sans-serif;
     --heading: 'Big Shoulders 36',system-ui,sans-serif;
-    --font-size: clamp(1.3rem,1.65vw,1.7rem);
+    --font-size: clamp(1.3rem,1.7vw,1.6rem);
     --line-height: 1.5;
     --primary-color: #161718;
     --highlight-color: blue;
@@ -76,7 +76,7 @@ main * + * {
 }
 
 h2 + .blurb, h1 + * + *, article + article {
-    margin-block-start: calc(var(--gap) * 1.6);
+    margin-block-start: calc(var(--gap) * 1.4);
 }
 
 li + li {
@@ -182,7 +182,7 @@ img {
 }
 
 .blurb p {
-    max-width: 47.5ch;
+    max-width: 50ch;
 }
 
 .blurb.short p {
