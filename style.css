@@ -198,7 +198,7 @@ img {
 .info .small-text {
     margin-block-start: calc(var(--gap) * 2);
     font-family: var(--body);
-    font-size: calc(var(--font-size) * .8);
+    font-size: calc(var(--font-size) * .9);
 }
 
 p,li {
