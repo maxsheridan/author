@@ -175,9 +175,9 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: calc(var(--gap) * 4);
+    gap: calc(var(--gap) * 4.4);
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 .left {
