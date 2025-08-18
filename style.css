@@ -127,7 +127,7 @@ main {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
 .stackable section {
@@ -137,7 +137,6 @@ main {
 .review.feature {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     gap: calc(var(--gap) * 4.4);
     width: 100%;
@@ -145,11 +144,7 @@ main {
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
     flex: 1;
-    justify-content: center;
-    align-items: center;
 }
 
 img {
@@ -159,7 +154,6 @@ img {
 
 .right {
     flex: 2;
-    margin: 0 auto;
 }
 
 h2, h1 {
@@ -206,16 +200,16 @@ p,li {
     max-width: 59ch;
 }
 
-.blurb {
+.blurb p {
     max-width: 57ch;
 }
 
-.blurb.short {
+.blurb.short p {
     max-width: 55ch;
 }
 
 .blurb.x-short p {
-    max-width: 42ch;
+    max-width: 48ch;
 }
 
 li {
