@@ -144,6 +144,10 @@ section {
     row-gap: calc(var(--gap) * 2.4); 
 }
 
+.novel.two .blurb-block {
+    column-gap: 8rem;
+}
+
 .book {
     width: max(25vw, 20rem);
 }
@@ -167,10 +171,6 @@ h2, h1 {
 
 .blurb p {
     max-width: 56ch;
-}
-
-.short p, .short h2 {
-    padding: 0 var(--gap);
 }
 
 .small-text {
@@ -290,14 +290,14 @@ hr {
     white-space:nowrap;
 }
 
-@media(max-width: 1075px){   
+@media(max-width: 1075px) {   
     .stackable {
         --font-size: clamp(1.25rem,2.4vw,1.7rem);
         font-size: var(--font-size);
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .big-screen {
         display: none;
     }
