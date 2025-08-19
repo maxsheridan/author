@@ -173,6 +173,10 @@ h2, h1 {
     max-width: 56ch;
 }
 
+.blurb.short p {
+    max-width: 54ch;
+}
+
 .small-text {
     margin-block-start: calc(var(--gap) * .8);
     font-family: var(--micro);
