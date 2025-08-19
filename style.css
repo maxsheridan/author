@@ -137,7 +137,8 @@ section {
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap; 
-    column-gap: 6rem;      
+    column-gap: 6rem;
+    margin: unset;      
 }
 
 .blurb-block:first-child {
