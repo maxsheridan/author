@@ -25,7 +25,6 @@
 
 :root {
     --gap: clamp(1.13rem,4vw,1.25rem);
-    --padding: 3rem 1rem;
     --body: 'Hex Franklin',system-ui,sans-serif;
     --micro: 'Big Shoulders 18',system-ui,sans-serif;
     --heading: 'Big Shoulders 36',system-ui,sans-serif;
@@ -96,13 +95,14 @@ body {
 }
 
 .acme-all-purpose-wrapper {
+    width: 100%;
+    padding: 3rem 1rem;;
+}
+
+.acme-all-purpose-wrapper.flex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 100dvh;
-    padding: var(--padding);
 }
 
 header, footer {
@@ -121,30 +121,31 @@ header {
 }
 
 main {
+    padding: calc(var(--gap) * 2.5) 0 calc(var(--gap) * 4.5);
+}
+
+section {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 4rem 0;
+    align-items: center; 
+    max-width: max-content;
+    margin: 0 auto;
 }
 
-.stackable section {
-    margin: unset;
-}
-
-.review.feature {
+.blurb-block {
     display: flex;
-    flex-direction: row;
+    justify-content: center; 
     align-items: center;
-    gap: calc(var(--gap) * 4.4);
-    max-width: 1300px;
+    flex-wrap: wrap; 
+    column-gap: 6rem;      
 }
 
-.left {
-    flex: 1;
-    text-align: center;
+.blurb-block:first-child {
+    row-gap: calc(var(--gap) * 2.4); 
+}
+
+.book {
+    width: max(25vw, 20rem);
 }
 
 img {
@@ -152,8 +153,8 @@ img {
     height: auto;
 }
 
-.right {
-    flex: 2;
+.book.spacer {
+    height: 0;
 }
 
 h2, h1 {
@@ -164,6 +165,14 @@ h2, h1 {
     text-transform: uppercase;
 }
 
+.blurb p {
+    max-width: 56ch;
+}
+
+.short p, .short h2 {
+    padding: 0 var(--gap);
+}
+
 .small-text {
     margin-block-start: calc(var(--gap) * .8);
     font-family: var(--micro);
@@ -171,7 +180,7 @@ h2, h1 {
 }
 
 .info .small-text {
-    margin-block-start: calc(var(--gap) * 2);
+    margin-block-start: calc(var(--gap) * 2.4);
     font-family: var(--body);
     font-size: calc(var(--font-size) * .9);
 }
@@ -198,18 +207,6 @@ li + li {
 
 p,li {
     max-width: 59ch;
-}
-
-.blurb p {
-    max-width: 57ch;
-}
-
-.blurb.short p {
-    max-width: 55ch;
-}
-
-.blurb.x-short p {
-    max-width: 48ch;
 }
 
 li {
@@ -258,7 +255,7 @@ hr {
     align-items: center;
     gap: calc(var(--gap) * .8);
     width: 100%;
-    margin-block: calc(var(--gap) * 4);
+    margin-block: calc(var(--gap) * 4.5);
 }
 
 .skull {
@@ -293,20 +290,10 @@ hr {
     white-space:nowrap;
 }
 
-@media(max-width: 1024px){   
+@media(max-width: 1075px){   
     .stackable {
         --font-size: clamp(1.25rem,2.4vw,1.7rem);
         font-size: var(--font-size);
-    }
-    .review.feature {
-        display: block;
-    }
-    .left {
-        max-width: 400px;
-        margin: 0 auto calc(var(--gap) * 2);
-    }
-    img {
-        max-width: 90%;
     }
 }
 
