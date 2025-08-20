@@ -121,7 +121,7 @@ header {
 }
 
 main {
-    padding: calc(var(--gap) * 2.5) 0 calc(var(--gap) * 4.5);
+    padding: 4rem 0;
 }
 
 section {
@@ -137,12 +137,11 @@ section {
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap; 
-    column-gap: 6rem;
-    margin: unset;      
+    column-gap: 6rem;    
 }
 
 .blurb-block:first-child {
-    row-gap: calc(var(--gap) * 2.4); 
+    row-gap: calc(var(--gap) * 2);
 }
 
 .novel.two .blurb-block {
@@ -260,7 +259,7 @@ hr {
     align-items: center;
     gap: calc(var(--gap) * .8);
     width: 100%;
-    margin-block: calc(var(--gap) * 4.5);
+    margin-block: calc(var(--gap) * 4.4);
 }
 
 .skull {
