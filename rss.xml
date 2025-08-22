@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>News Updates from Max Sheridan</title>
+        <title>RSS Updates from Max Sheridan</title>
         <link>https://maxsheridan.com/rss-updates</link>
         <description>Brief updates about new stories and books and (rarer) news about when and where I'm teaching or reading.</description>
         <language>en-us</language>
