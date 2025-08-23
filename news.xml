@@ -5,7 +5,7 @@
     <channel>
         <title>RSS Updates from Max Sheridan</title>
         <link>https://maxsheridan.com/rss-updates</link>
-        <description>Brief updates about new stories and books and (rarer) news about when and where I'm teaching or reading.</description>
+        <description>Brief updates about new stories and books and (rarer) news about when and where I'm teaching or reading</description>
         <language>en-us</language>
         <lastBuildDate>Sat, 23 Aug 2025 00:00:00 GMT</lastBuildDate>
         <atom:link href="https://maxsheridan.com/feed.xml" rel="self" type="application/rss+xml" />
