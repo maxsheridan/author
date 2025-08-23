@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content"/>
         <title>RSS Updates</title>
         <link rel="stylesheet" href="/style.css?v=46"/>
-        <style>p.pub-date {color:rgb(var(--accent-color))}</style>
+        <style>p.pub-date {color:rgb(var(--accent-color))}hr{margin-block:calc(var(--gap) * 1.4)}</style>
       </head>
       <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
