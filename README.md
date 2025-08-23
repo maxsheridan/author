@@ -1,5 +1,5 @@
 # Hi, I'm Max. 
-This is my personal author website. 
+This is my author website. 
 
 It's a few hand-coded HTML files served over GitHub Pages.
 
