@@ -8,8 +8,10 @@
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content"/>
         <title>RSS Updates</title>
+        <link rel="icon" sizes="any" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
         <link rel="stylesheet" href="/style.css?v=46"/>
-        <style>p.pub-date {color:rgb(var(--accent-color))}hr{margin-block:calc(var(--gap) * 1.4)}</style>
+        <style>p.pub-date {color:rgb(var(--accent-color))}hr.rss{margin-block:calc(var(--gap) * 1.4)}</style>
       </head>
       <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
@@ -30,7 +32,7 @@
                   This is an old-school RSS feed. Copy the URL in your browser and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
                 </strong>
               </p>
-              <hr/>
+              <hr class="rss"/>
               <xsl:for-each select="/*[local-name()='rss']/*[local-name()='channel']/*[local-name()='item']">
                 <div class="rss-item">
                   <span class="rss-title">
