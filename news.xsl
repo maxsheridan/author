@@ -8,8 +8,8 @@
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content"/>
         <title>RSS Updates</title>
-        <link rel="icon" sizes="any" href="/favicon.ico" type="image/x-icon"/>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+        <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
+        <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <link rel="stylesheet" href="/style.css?v=46"/>
         <style>p.pub-date {color:rgb(var(--accent-color))}hr.rss{margin-block:calc(var(--gap) * 1.4)}</style>
       </head>
