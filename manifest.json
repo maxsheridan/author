@@ -2,7 +2,8 @@
     "name": "Max Sheridan",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#FBFAF7",
+    "background_color": "#4B3C42",
+    "theme_color": "#4B3C42",
     "icons": [
         {
             "src": "/assets/icons/icon_192.png",
