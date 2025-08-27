@@ -7,7 +7,7 @@
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content"/>
-        <title>RSS Updates</title>
+        <title>RSS Updates - Max Sheridan</title>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <link rel="stylesheet" href="/style.css?v=46"/>
