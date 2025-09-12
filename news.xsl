@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/style.css?v=46"/>
         <style>p.pub-date{color:rgb(var(--accent-color))}hr.rss{margin-block:calc(var(--gap) * 1.4)}</style>
       </head>
-      <body>
+      <body style="background-color: var(--background-color)">
         <a href="#main-content" class="skip-link">Skip to content</a>
         <div class="acme-all-purpose-wrapper flex">
           <header class="linkstyling-off">
