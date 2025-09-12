@@ -6,14 +6,16 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
       <head>
+        <style>body{background-color:rgb(251,250,247)}@media(prefers-color-scheme:dark){body{background-color:rgb(22,23,24)}}</style>
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content"/>
+        <meta name="color-scheme" content="light dark"/>
         <title>RSS Updates - Max Sheridan</title>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <link rel="stylesheet" href="/style.css?v=46"/>
         <style>p.pub-date{color:rgb(var(--accent-color))}hr.rss{margin-block:calc(var(--gap) * 1.4)}</style>
       </head>
-      <body style="background-color: var(--background-color)">
+      <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
         <div class="acme-all-purpose-wrapper flex">
           <header class="linkstyling-off">
