@@ -11,7 +11,7 @@
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <link rel="stylesheet" href="/style.css?v=46"/>
-        <style>html{background-color:var(--background-color)}p.pub-date{color:rgb(var(--accent-color))}hr.rss{margin-block:calc(var(--gap) * 1.4)}</style>
+        <style>p.pub-date{color:rgb(var(--accent-color))}hr.rss{margin-block:calc(var(--gap) * 1.4)}</style>
       </head>
       <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
