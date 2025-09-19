@@ -11,8 +11,8 @@
         <title>RSS Updates - Max Sheridan</title>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
-        <link rel="stylesheet" href="/style.css?v=46"/>
-        <style>p.pub-date{color:rgb(var(--accent-color))}hr.rss{margin-block:calc(var(--gap) * 1.4)}</style>
+        <link rel="stylesheet" href="/style.min.css"/>
+        <style>p.pub-date{color:rgb(var(--accent-color))}hr.rss{margin-block-start:1.75rem;margin-block-end:1.75rem}</style>
       </head>
       <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
