@@ -143,39 +143,32 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: max-content;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .blurb-block {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    column-gap: 2.5rem;
     width: 100%;
 }
 
 .book {
-    padding: 2rem 0;
-}
-
-img {
-    max-width: 21rem;
-    width: 100%;
-    height: auto;
-}
-
-.novel.one .spacer {
-    width: 6rem;
-}
-
-.novel.two .spacer {
-    width: 8rem;
+    padding: 1.5rem 0;
 }
 
 .book-spacer {
-    width: 600px;
-    max-width: 27rem;
+    width: 100%;
+    max-width: calc(20rem + 3vw);
+}
+
+img {
+    max-width: calc(20rem + 3vw);
+    width: 100%;
+    height: auto;
 }
 
 h2, h1 {
@@ -190,8 +183,8 @@ h2, h1 {
     max-width: 56ch;
 }
 
-.blurb.short p {
-    max-width: 54ch;
+.short p {
+    padding-right: var(--gap);
 }
 
 .small-text {
@@ -315,8 +308,8 @@ hr {
     white-space: nowrap;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     .big-screen {
-    display: none;
+        display: none;
     }
 }
