@@ -36,7 +36,7 @@
     --body: 'Hex Franklin Narrow',system-ui, sans-serif;
     --micro: 'Big Shoulders 18', system-ui, sans-serif;
     --heading: 'Big Shoulders 36', system-ui, sans-serif;
-    --font-size: calc(1rem + .5vw);
+    --font-size: calc(1.05rem + .5vw);
     --primary-color: 22,  23,  24;
     --highlight-color: 0,  0,  255;
     --accent-color: 141,  140,  140;
@@ -98,7 +98,7 @@ body {
     margin: unset;
     font-family: var(--body);
     font-size: var(--font-size);
-    font-variation-settings: "wdth" 82, "wght" 425;
+    font-variation-settings: "wdth" 85, "wght" 425;
     font-style: normal;
     line-height: 1.5;
     color: rgb(var(--primary-color));
@@ -160,14 +160,9 @@ section {
     padding: 1.5rem 0;
 }
 
-.book-spacer {
+img,.book-spacer {
     width: 100%;
     max-width: calc(20rem + 3vw);
-}
-
-img {
-    max-width: calc(20rem + 3vw);
-    width: 100%;
     height: auto;
 }
 
@@ -184,7 +179,7 @@ h2, h1 {
 }
 
 .short p {
-    padding-right: var(--gap);
+    padding-right: 1.5rem;
 }
 
 .small-text {
@@ -207,7 +202,7 @@ main * + * {
 }
 
 .blurb, article + h2  {
-    margin-block-start: 3rem;
+    margin-block-start: 2.75rem;
 }
 
 h2 + .blurb, h1 + * + *, article + article {
