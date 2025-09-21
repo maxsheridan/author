@@ -126,10 +126,6 @@ header, footer {
     text-transform: uppercase;
 }
 
-header a, footer a {
-    padding: 0 var(--gap);
-}
-
 header {
     font-size: calc(var(--font-size) * 1.25);
 }
@@ -273,7 +269,6 @@ hr {
 .skull {
     width: auto;
     max-height: 2.5rem;
-    padding: 0 var(--gap);
 }
 
 .space {
