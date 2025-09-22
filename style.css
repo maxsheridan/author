@@ -127,7 +127,7 @@ header, footer {
 }
 
 header {
-    font-size: calc(var(--font-size) * 1.25);
+    font-size: calc(var(--font-size) * 1.35);
 }
 
 main {
