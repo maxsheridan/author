@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Hex Franklin Narrow';
-    src: url(/assets/type/HEXFranklinNarrow-Regular.woff2) format('woff2');
+    src: url(/assets/type/hexfranklinnarrow_regular.woff2) format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Hex Franklin';
-    src: url(/assets/type/HEXFranklin-Variable.woff2) format('woff2');
+    src: url(/assets/type/hexfranklin_variable.woff2) format('woff2');
     font-weight: 100 900;
     font-stretch: 75% 125%;
     font-style: normal;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'Big Shoulders 18';
-    src: url(/assets/type/BigShoulders18-Bold.woff2) format('woff2');
+    src: url(/assets/type/bigshoulders_18pt_bold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: 'Big Shoulders 36';
-    src: url(/assets/type/BigShoulders36-Bold.woff2) format('woff2');
+    src: url(/assets/type/bigshoulders_36pt_bold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
