@@ -189,7 +189,7 @@ h2, h1 {
 
 .small-text {
     font-family: var(--micro);
-    font-size: calc(var(--paragraph) * .8);
+    font-size: calc(var(--paragraph) * .85);
 }
 
 .info .small-text {
