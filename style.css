@@ -49,11 +49,6 @@
     }
 }
 
-:focus-visible {
-    outline: 3px solid rgb(var(--highlight));
-    outline-offset: 2px;
-}
-
 @media(prefers-color-scheme:dark) {
     :root {
     --primary: 211,  206,  193;
@@ -261,6 +256,28 @@ a {
 
 .linkstyling-off a {
     text-decoration: none;
+}
+
+#copyLink {
+    font: inherit;
+    line-height: normal;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button,
+[role="button"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+    outline: 3px solid rgb(var(--highlight));
+    outline-offset: 3px;
+    border-radius: .25rem;
 }
 
 hr {
