@@ -234,6 +234,13 @@ li {
     text-align: center;
 }
 
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     color: rgb(var(--primary));
     text-decoration: underline;
