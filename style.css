@@ -249,7 +249,8 @@ a {
 }
 
 @media (hover:hover) and (pointer:fine) {
-    a:hover {
+    a:hover,
+    button:hover {
         opacity: .6;
     }
 }
@@ -261,13 +262,14 @@ a {
 #copyLink {
     font: inherit;
     line-height: normal;
+    text-transform: uppercase;
     color: inherit;
-    text-decoration: none;
     cursor: pointer;
 }
 
 button,
 [role="button"] {
+    transition: opacity 0.2s ease;
     -webkit-appearance: none;
     appearance: none;
 }
