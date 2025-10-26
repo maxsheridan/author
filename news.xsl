@@ -48,13 +48,13 @@
             </div>
           </main>
           
-          <footer class="linkstyling-off" aria-label="footer links">
+          <footer class="linkstyling-off" aria-label="Footer links">
             <hr class="big-screen" aria-hidden="true"/>
             <a href="/short-fiction">Short Fiction</a>
             <hr aria-hidden="true"/>
             <a href="/news">News</a>
             <hr aria-hidden="true"/>
-            <a id="copyLink" onclick="copyEmail()">Email</a>
+            <button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button>
             <hr class="big-screen" aria-hidden="true"/>
           </footer>
         </div>
