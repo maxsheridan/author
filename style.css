@@ -133,6 +133,26 @@ main {
     padding: 4rem 0;
 }
 
+main * + * {
+    margin-block-start: var(--gap);
+}
+
+.margins-off > * {
+    margin-block-start: 0;
+}
+
+.blurb, article + h2  {
+    margin-block-start: 2.75rem;
+}
+
+h2 + .blurb, h1 + * + *, article + article {
+    margin-block-start: calc(var(--gap) + .5rem)
+}
+
+li + li {
+    margin-block-start: .5rem;
+}
+
 .stack {
     padding: 2.5rem 0 4rem;
 }
@@ -174,6 +194,14 @@ h2, h1 {
     text-transform: uppercase;
 }
 
+p, li {
+    max-width: 59ch;
+}
+
+li {
+    list-style: none;
+}
+
 .blurb p {
     max-width: 56ch;
 }
@@ -191,49 +219,6 @@ h2, h1 {
     margin-block-start: 3rem;
     font-family: var(--body);
     font-size: calc(var(--paragraph) * .9);
-}
-
-main * + * {
-    margin-block-start: var(--gap);
-}
-
-.margins-off > * {
-    margin-block-start: 0;
-}
-
-.blurb, article + h2  {
-    margin-block-start: 2.75rem;
-}
-
-h2 + .blurb, h1 + * + *, article + article {
-    margin-block-start: calc(var(--gap) + .5rem)
-}
-
-li + li {
-    margin-block-start: .5rem;
-}
-
-p, li {
-    max-width: 59ch;
-}
-
-li {
-    list-style: none;
-}
-
-.highlight {
-    color: rgb(var(--highlight));
-}
-
-.center {
-    text-align: center;
-}
-
-.flex-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 a {
@@ -259,16 +244,13 @@ a {
     text-decoration: none;
 }
 
-#copyLink {
+button,
+[role="button"] {
     font: inherit;
     line-height: normal;
     text-transform: uppercase;
     color: inherit;
     cursor: pointer;
-}
-
-button,
-[role="button"] {
     transition: opacity 0.2s ease;
     -webkit-appearance: none;
     appearance: none;
@@ -280,6 +262,26 @@ button:focus-visible,
     outline: 3px solid rgb(var(--highlight));
     outline-offset: 3px;
     border-radius: .25rem;
+}
+
+.highlight {
+    color: rgb(var(--highlight));
+}
+
+.center {
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.space {
+    display: inline-block;
+    width: .75rem;
 }
 
 hr {
@@ -300,11 +302,6 @@ hr {
 .skull {
     width: auto;
     max-height: 2.5rem;
-}
-
-.space {
-    display: inline-block;
-    width: .75rem;
 }
 
 .skip-link {
