@@ -12,16 +12,18 @@
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <link rel="stylesheet" href="/style.min.css?v=2"/>
-        <style>p.pub-date{color:rgb(var(--accent))}hr.rss{margin-block-start:1.75rem;margin-block-end:1.75rem}</style>
+        <style>p.pub-date{color:rgb(var(--accent))}hr.rss{margin-block-start:2.5rem;margin-block-end:2.5rem}</style>
       </head>
       <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
         <div class="acme-all-purpose-wrapper flex">
           <header class="linkstyling-off">
             <hr aria-hidden="true"/>
+            <div class="space"></div>
             <a href="/" class="site-title" aria-label="Max Sheridan home">
               Max Sheridan
             </a>
+            <div class="space"></div>
             <hr aria-hidden="true"/>
           </header>
           
@@ -50,10 +52,15 @@
           
           <footer class="linkstyling-off" aria-label="Footer links">
             <hr class="big-screen" aria-hidden="true"/>
+            <div class="space big-screen"></div>
             <a href="/short-fiction">Short Fiction</a>
+            <div class="space"></div>
             <hr aria-hidden="true"/>
+            <div class="space"></div>
             <a href="/news">News</a>
+            <div class="space"></div>
             <hr aria-hidden="true"/>
+            <div class="space"></div>
             <button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button>
             <hr class="big-screen" aria-hidden="true"/>
           </footer>
