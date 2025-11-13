@@ -309,7 +309,6 @@ hr {
 
 .skip-link:focus {
     top: 6px;
-    color: rgb(var(--primary));
 }
 
 .vh {
