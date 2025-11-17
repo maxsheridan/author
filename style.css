@@ -208,6 +208,7 @@ li {
 .small-text {
     font-family: var(--micro);
     font-size: calc(var(--paragraph) * .875);
+    text-transform: uppercase;
 }
 
 .info .small-text {
