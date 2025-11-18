@@ -215,6 +215,7 @@ li {
     margin-block-start: 3rem;
     font-family: var(--body);
     font-size: calc(var(--paragraph) * .9);
+    text-transform: none;
 }
 
 a {
