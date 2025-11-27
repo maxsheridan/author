@@ -28,24 +28,26 @@
           </header>
           
           <main id="main-content" tabindex="-1">
-            <div class="acme-content-wrapper">
-              <h1>RSS Feed</h1>
-              <p>
+            <div class="acme-content-wrapper gap2">
+              <div class="gap1">
+                <h1>RSS Feed</h1>
+                <p>
                   This is an old-school RSS feed. Copy the URL in your browser and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
-              </p>
+                </p>
+              </div>
               <hr class="rss"/>
               <xsl:for-each select="/*[local-name()='rss']/*[local-name()='channel']/*[local-name()='item']">
-                <div class="rss-item">
-                  <span class="rss-title">
-                    <a href="{link}">
-                      <xsl:value-of select="title"/>
-                    </a>
-                  </span>
-                  <p class="pub-date">
-                    Published on:
-                    <xsl:value-of select="substring(pubDate, 6, 11)"/>
-                  </p>
-                </div>
+              <div class="rss-item">
+                <span class="rss-title">
+                  <a href="{link}">
+                    <xsl:value-of select="title"/>
+                  </a>
+                </span>
+                <p class="pub-date">
+                  Published on:
+                  <xsl:value-of select="substring(pubDate, 6, 11)"/>
+                </p>
+              </div>
               </xsl:for-each>
             </div>
           </main>
