@@ -297,8 +297,8 @@ hr {
 }
 
 .skull {
-    width: auto;
-    max-height: 2.5rem;
+    width: 1.5em;
+    height: auto;
 }
 
 .skip-link {
