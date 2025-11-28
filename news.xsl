@@ -28,8 +28,8 @@
           </header>
           
           <main id="main-content" tabindex="-1">
-            <div class="acme-content-wrapper gap2">
-              <div class="gap1">
+            <div class="acme-content-wrapper space-2">
+              <div class="space-1">
                 <h1>RSS Feed</h1>
                 <p>
                   This is an old-school RSS feed. Copy the URL in your browser and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
@@ -54,15 +54,15 @@
           
           <footer class="linkstyling-off" aria-label="Footer links">
             <hr class="big-screen" aria-hidden="true"/>
-            <div class="space big-screen"></div>
+            <div class="gap--1 big-screen"></div>
             <a href="/short-fiction">Short Fiction</a>
-            <div class="space"></div>
+            <div class="gap--1"></div>
             <hr aria-hidden="true"/>
-            <div class="space"></div>
+            <div class="gap--1"></div>
             <a href="/news">News</a>
-            <div class="space"></div>
+            <div class="gap--1"></div>
             <hr aria-hidden="true"/>
-            <div class="space"></div>
+            <div class="gap--1"></div>
             <button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button>
             <hr class="big-screen" aria-hidden="true"/>
           </footer>

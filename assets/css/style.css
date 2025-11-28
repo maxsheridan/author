@@ -33,13 +33,13 @@
 
 :root {
     --ratio: 1.5;
-    --gap-2: calc(var(--gap-1) / var(--ratio));
-    --gap-1: calc(var(--gap0) / var(--ratio));
-    --gap0: 1rem;
-    --gap1: calc(var(--gap0) * var(--ratio));
-    --gap2: calc(var(--gap1) * var(--ratio));
-    --gap3: calc(var(--gap2) * var(--ratio));
-    --gap4: calc(var(--gap3) * var(--ratio));
+    --space--2: calc(var(--space--1) / var(--ratio));
+    --space--1: calc(var(--space-0) / var(--ratio));
+    --space-0: 1rem;
+    --space-1: calc(var(--space-0) * var(--ratio));
+    --space-2: calc(var(--space-1) * var(--ratio));
+    --space-3: calc(var(--space-2) * var(--ratio));
+    --space-4: calc(var(--space-3) * var(--ratio));
     --body: 'Hex Franklin Narrow',system-ui, sans-serif;
     --micro: 'Big Shoulders 18', system-ui, sans-serif;
     --heading: 'Big Shoulders 36', system-ui, sans-serif;
@@ -140,33 +140,38 @@ main.raised {
     padding: 2.5rem 0 4rem;
 }
 
-.gap-2 > * + * {
-    margin-block-start: var(--gap-2);
+.space--2 > * + * {
+    margin-block-start: var(--space--2);
 }
 
-.gap-1 > * + * {
-    margin-block-start: var(--gap-1);
+.space--1 > * + * {
+    margin-block-start: var(--space--1);
 }
 
-.gap1 > * + * {
-    margin-block-start: var(--gap1);
+.space-1 > * + * {
+    margin-block-start: var(--space-1);
 }
 
-.gap2 > * + * {
-    margin-block-start: var(--gap2);
+.space-2 > * + * {
+    margin-block-start: var(--space-2);
 }
 
-.gap3 > * + * {
-    margin-block-start: var(--gap3);
+.space-3 > * + * {
+    margin-block-start: var(--space-3);
 }
 
-.gap4 > * + * {
-    margin-block-start: var(--gap4);
+.space-4 > * + * {
+    margin-block-start: var(--space-4);
 }
 
-.space {
+.gap--2 {
     display: inline-block;
-    width: var(--gap-1);
+    width: var(--space--2);
+}
+
+.gap--1 {
+    display: inline-block;
+    width: var(--space--1);
 }
 
 section {
@@ -188,11 +193,11 @@ section {
 }
 
 .blurb.feature {
-    margin-block-start: var(--gap2);
+    margin-block-start: var(--space-2);
 }
 
 .blurb {
-    margin-block-start: var(--gap3);
+    margin-block-start: var(--space-3);
 }
 
 .book {
