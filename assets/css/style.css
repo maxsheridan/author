@@ -192,7 +192,11 @@ section {
     width: 100%;
 }
 
-.blurb.feature {
+.blurb-block.feature {
+    row-gap: var(--space-0);
+}
+
+.blurb-block.feature .blurb {
     margin-block-start: var(--space-2);
 }
 
