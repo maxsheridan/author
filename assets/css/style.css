@@ -92,7 +92,6 @@ body {
     align-items: center;
     min-height: 100vh;
     min-height: 100dvh;
-    margin: unset;
     font-family: var(--body);
     font-size: var(--paragraph);
     font-variation-settings: "wdth" 85, "wght" 425;
