@@ -6,33 +6,35 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
       <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content"/>
         <meta name="color-scheme" content="light dark"/>
         <link rel="preload" href="/assets/type/bigshoulders_36pt_bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="preload" href="/assets/type/bigshoulders_18pt_bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <title>RSS Updates - Max Sheridan</title>
+        <style>.rss-item + .rss-item{margin-block-start:var(--space-2)}hr.rss{margin-block-start:var(--space-3);margin-block-end:var(--space-3)}p.pub-date{color:rgb(var(--accent))}</style>
+        <link rel="stylesheet" href="/assets/css/shared.min.css"/>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
-        <link rel="stylesheet" href="/assets/css/style.min.css?v=3"/>
-        <style>p.pub-date{color:rgb(var(--accent))}hr.rss{margin-block-start:2.5rem;margin-block-end:2.5rem}</style>
+        <title>RSS Updates - Max Sheridan</title>
       </head>
       <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
         <div class="acme-all-purpose-wrapper flex">
           <header class="linkstyling-off">
             <hr aria-hidden="true"/>
-            <div class="space"></div>
+            <div class="gap--1"></div>
             <a href="/" class="site-title" aria-label="Max Sheridan home">
               Max Sheridan
             </a>
-            <div class="space"></div>
+            <div class="gap--1"></div>
             <hr aria-hidden="true"/>
           </header>
           
           <main id="main-content" tabindex="-1">
-            <div class="acme-content-wrapper space-2">
-              <div class="space-1">
+            <div class="acme-content-wrapper">
+              <div class="heading-with-text">
                 <h1>RSS Feed</h1>
                 <p>
                   This is an old-school RSS feed. Copy the URL in your browser and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
