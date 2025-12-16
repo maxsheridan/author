@@ -198,7 +198,7 @@ img {
 }
 
 .blurb > * + * {
-    margin-block-start: var(--space-0);
+    margin-block-start: calc(var(--space-0) + .5vw);
 }
 
 .blurb-block.feature .blurb {
