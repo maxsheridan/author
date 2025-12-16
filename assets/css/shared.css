@@ -32,14 +32,13 @@
 }
 
 :root {
-    --ratio: 1.5;
+    --ratio: 1.7;
     --space--2: calc(var(--space--1) / var(--ratio));
     --space--1: calc(var(--space-0) / var(--ratio));
     --space-0: 1rem;
     --space-1: calc(var(--space-0) * var(--ratio));
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-3: calc(var(--space-2) * var(--ratio));
-    --space-4: calc(var(--space-3) * var(--ratio));
     --body: 'Hex Franklin Narrow',system-ui, sans-serif;
     --micro: 'Big Shoulders 18', system-ui, sans-serif;
     --heading: 'Big Shoulders 36', system-ui, sans-serif;
@@ -153,19 +152,16 @@ main {
 }
 
 li + li {
-    margin-block-start: var(--space-0);
+    margin-block-start: var(--space--1);
 }
 
 .heading-with-text > * + * {
     margin-block-start: var(--space-1);
 }
 
-.heading-no-text > * + * {
-    margin-block-start: var(--space-2);
-}
-
+.heading-no-text > * + *,
 .acme-article-wrapper > * + * {
-    margin-block-start: var(--space-3);
+    margin-block-start: var(--space-2);
 }
 
 h1, 
