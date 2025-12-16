@@ -199,16 +199,16 @@ img {
 }
 
 .blurb-block.feature .blurb {
-    margin-block-start: calc(var(--space-1) + .9vw);
+    margin-block-start: calc(var(--space-1) + .5vw);
 }
 
 .blurb,
 .short .blurb + .blurb {
-    margin-block-start: calc(var(--space-2) + 1vw);
+    margin-block-start: var(--space-3);
 }
 
 .blurb > * + * {
-    margin-block-start: var(--space-1);
+    margin-block-start: calc(var(--space-0) + .5vw);
 }
 
 h1, 
