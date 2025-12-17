@@ -7,7 +7,6 @@
     font-display: swap;
 }
 
-
 @font-face {
     font-family: 'Hex Franklin Narrow';
     src: url(/assets/type/hexfranklinnarrow_regular.woff2) format('woff2');
@@ -166,11 +165,11 @@ li + li {
     margin-block-start: var(--space--1);
 }
 
-.heading-with-text > * + * {
+.heading-with-text > * + *,
+.heading-no-text > * + * {
     margin-block-start: var(--space-1);
 }
 
-.heading-no-text > * + *,
 .acme-article-wrapper > * + * {
     margin-block-start: var(--space-2);
 }
@@ -180,7 +179,7 @@ h2 {
     font-family: var(--display) !important;
     font-size: calc(var(--paragraph) * 2);
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
