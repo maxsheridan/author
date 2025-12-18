@@ -2,7 +2,7 @@
     font-family: 'Hex Franklin';
     src: url(/assets/type/hexfranklin_variable.woff2) format('woff2');
     font-weight: 100 900;
-    font-stretch: 75% 125%;
+    font-stretch: 75% 100%;
     font-style: normal;
     font-display: swap;
 }
