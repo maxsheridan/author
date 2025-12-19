@@ -44,7 +44,6 @@
     --body: 'Hex Franklin Narrow',system-ui, sans-serif;
     --display: 'Big Shoulders 36', system-ui, sans-serif;
     --paragraph: calc(1.13rem + .5vw);
-    --paragraph-2: calc(1.13rem + 1vw);
     --primary: 22,  23,  24;
     --highlight: 0,  0,  255;
     --accent: 141,  140,  140;
