@@ -169,7 +169,7 @@ h2 {
     font-family: var(--display) !important;
     font-size: calc(var(--paragraph) * 2);
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
     text-transform: uppercase;
 }
 
