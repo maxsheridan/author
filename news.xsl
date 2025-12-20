@@ -10,10 +10,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content"/>
         <meta name="color-scheme" content="light dark"/>
-        <style>html{background-color:rgb(251, 250, 247)}@media(prefers-color-scheme:dark){html{background-color:rgb(22, 23, 24);}}.rss-item + .rss-item{margin-block-start:var(--space-1)}hr.rss{margin-block-start:var(--space-2);margin-block-end:var(--space-2)}p.pub-date{color:rgb(var(--accent))}</style>
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="stylesheet" href="/assets/css/shared.min.css"/>
+        <style>html,body{background-color:rgb(251, 250, 247)}@media(prefers-color-scheme:dark){html,body{background-color:rgb(22, 23, 24);}}.rss-item + .rss-item{margin-block-start:var(--space-1)}hr.rss{margin-block-start:var(--space-2);margin-block-end:var(--space-2)}p.pub-date{color:rgb(var(--accent))}</style>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <title>RSS Updates - Max Sheridan</title>
