@@ -41,7 +41,7 @@ img {
     row-gap: calc(var(--space-1) + 2vw);
 }
 
-.blurb>*+* {
+.blurb > * + * {
     margin-block-start: calc(var(--space-0) + .5vw);
 }
 
@@ -50,7 +50,7 @@ img {
 }
 
 .blurb,
-.short .blurb+.blurb {
+.short .blurb + .blurb {
     margin-block-start: var(--space-2);
 }
 
