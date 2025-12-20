@@ -33,9 +33,11 @@
 
 :root {
     --ratio: 1.7;
+    --base-rem: 1rem;
+    --vw-scale: .25vw;
+    --space-0: calc(var(--base-rem) + var(--vw-scale));
     --space--2: calc(var(--space--1) / var(--ratio));
     --space--1: calc(var(--space-0) / var(--ratio));
-    --space-0: 1rem;
     --space-1: calc(var(--space-0) * var(--ratio));
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-3: calc(var(--space-2) * var(--ratio));
@@ -157,7 +159,7 @@ li + li {
 }
 
 .acme-article-wrapper > * + * {
-    margin-block-start: calc(var(--space-1) + 1vw);
+    margin-block-start: calc(var(--space-1) + .5vw);
 }
 
 .center {

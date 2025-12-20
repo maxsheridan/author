@@ -38,20 +38,20 @@ img {
 }
 
 .blurb-block.feature {
-    row-gap: calc(var(--space-1) + 2vw);
+    row-gap: var(--space-2);
 }
 
-.blurb,
+.blurb:not(.headline),
 .short .blurb + .blurb {
-    margin-block-start: calc(var(--space-2) + .5vw);
+    margin-block-start: var(--space-2);
 }
 
-.blurb-block.feature .blurb {
+.headline {
     margin-block-start: var(--space-1);
 }
 
 .blurb > * + * {
-    margin-block-start: calc(var(--space-0) + .5vw);
+    margin-block-start: var(--space-0);
 }
 
 p,
