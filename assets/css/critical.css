@@ -1,1 +1,95 @@
-section{display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:1600px;margin:0 auto;}.blurb-block{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;column-gap:6rem;width:100%;}.book,.book-spacer{flex:0 0 25%;min-width:min(360px,75vw);}.book-spacer{height:0;background:red;}.book img,.book-spacer{aspect-ratio:450 / 728;}img{width:100%;height:auto;}.blurb-block.feature{row-gap:calc(var(--space-1) + 2vw);}.blurb,.short .blurb + .blurb{margin-block-start:calc(var(--space-2) + .5vw);}.blurb-block.feature .blurb{margin-block-start:var(--space-1);}.blurb>* + *{margin-block-start:calc(var(--space-0) + .5vw);}p,li{max-width:59ch;}.blurb p{max-width:56ch;}.short p{padding-right:1.5rem;}.small-text{font-family:var(--display);font-size:calc(var(--paragraph) * .875);text-transform:uppercase;}.info .small-text{margin-block-start:3rem;font-family:var(--body);font-size:calc(var(--paragraph) * .9);text-transform:none;}.divider{display:flex;justify-content:space-between;align-items:center;width:100%;margin-block-start:5rem;margin-block-end:5rem;}svg.skull{width:1.5em;height:auto;}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.blurb-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 6rem;
+    width: 100%;
+}
+
+.book,
+.book-spacer {
+    flex: 0 0 25%;
+    min-width: min(360px, 75vw);
+}
+
+.book-spacer {
+    height: 0;
+    background: red;
+}
+
+.book img,
+.book-spacer {
+    aspect-ratio: 450 / 728;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.blurb-block.feature {
+    row-gap: calc(var(--space-1) + 2vw);
+}
+
+.blurb,
+.short .blurb + .blurb {
+    margin-block-start: calc(var(--space-2) + .5vw);
+}
+
+.blurb-block.feature .blurb {
+    margin-block-start: var(--space-1);
+}
+
+.blurb > * + * {
+    margin-block-start: calc(var(--space-0) + .5vw);
+}
+
+p,
+li {
+    max-width: 59ch;
+}
+
+.blurb p {
+    max-width: 56ch;
+}
+
+.short p {
+    padding-right: 1.5rem;
+}
+
+.small-text {
+    font-family: var(--display);
+    font-size: calc(var(--paragraph) * .875);
+    text-transform: uppercase;
+}
+
+.info .small-text {
+    margin-block-start: 3rem;
+    font-family: var(--body);
+    font-size: calc(var(--paragraph) * .9);
+    text-transform: none;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-block-start: 5rem;
+    margin-block-end: 5rem;
+}
+
+svg.skull {
+    width: 1.5em;
+    height: auto;
+}
