@@ -157,7 +157,7 @@ li + li {
 }
 
 .acme-article-wrapper > * + * {
-    margin-block-start: calc(var(--space-1) + .5vw);
+    margin-block-start: var(--space-2);
 }
 
 .center {
