@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="3.0" 
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:atom="http://www.w3.org/2005/Atom">
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
   
   <xsl:template match="/">
@@ -13,7 +14,7 @@
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="stylesheet" href="/assets/css/shared.min.css"/>
-        <style>html,body{background-color:rgb(251, 250, 247)}@media(prefers-color-scheme:dark){html,body{background-color:rgb(22, 23, 24);}}.rss-item + .rss-item{margin-block-start:var(--space-1)}hr.rss{margin-block-start:var(--space-2);margin-block-end:var(--space-2)}p.pub-date{color:rgb(var(--accent))}</style>
+        <style>html,body{background-color:rgb(251, 250, 247)}@media(prefers-color-scheme:dark){html,body{background-color:rgb(22, 23, 24);}}.subscribe{width:max-content;margin-block-start:var(--space-1);margin-block-end:var(--space-1);text-decoration: underline;text-decoration-thickness:2px;text-decoration-color:rgb(var(--accent));text-underline-offset:2px;text-decoration-skip-ink:all;;word-break:break-all;cursor:pointer;transition:background .2s ease}.subscribe:hover{opacity:.6}.rss-item + .rss-item{margin-block-start:var(--space-1)}hr.rss{margin-block-start:var(--space-2);margin-block-end:var(--space-2)}p.pub-date{color:rgb(var(--accent))}</style>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <title>RSS Updates - Max Sheridan</title>
@@ -36,8 +37,9 @@
               <div class="heading-with-text">
                 <h1>RSS Feed</h1>
                 <p>
-                  This is an old-school RSS feed. Copy the URL in your browser and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
+                  This is an old-school RSS feed. Copy the URL below and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
                 </p>
+                <p class="subscribe" onclick="copyToClipboard(this)"><xsl:value-of select="/rss/channel/atom:link/@href"/></p>
               </div>
               <hr class="rss"/>
               <xsl:for-each select="/*[local-name()='rss']/*[local-name()='channel']/*[local-name()='item']">
@@ -71,7 +73,7 @@
             <hr class="big-screen" aria-hidden="true"/>
           </footer>
         </div>
-        <script>function copyEmail(){const email="max@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="var(--accent-color)";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
+        <script>function copyEmail(){const email="max@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="rgb(var(--accent))";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}function copyToClipboard(element){const text=element.textContent;navigator.clipboard.writeText(text).then(()=>{const originalText=element.textContent;const originalColor=element.style.color;const originalDecoration=element.style.textDecoration;element.textContent="Copied!";element.style.color="rgb(var(--accent))";element.style.textDecoration="none";setTimeout(()=>{element.textContent=originalText;element.style.color=originalColor;element.style.textDecoration=originalDecoration},2000)}).catch(err=>{console.error('Failed to copy:',err)})}</script>
       </body>
     </html>
   </xsl:template>
