@@ -151,7 +151,7 @@
                 <hr class="big-screen" aria-hidden="true">
             </footer>
         </div>
-        <script>function copyEmail(){const email="max@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="var(--accent-color)";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
+        <script>function copyEmail(){const email="max@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="var(--primary)";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
         <script>document.addEventListener("DOMContentLoaded",()=>{const main=document.getElementById("main-content");const highlightArticle=(id)=>{main.querySelectorAll("article").forEach(article=>{article.classList.remove("highlighted")});const target=document.getElementById(id);if(target){target.classList.add("highlighted")}};if(window.location.hash){const targetId=window.location.hash.substring(1);highlightArticle(targetId)}window.addEventListener("hashchange",()=>{const targetId=window.location.hash.substring(1);highlightArticle(targetId)})});</script>
     </body>
 </html>
