@@ -55,7 +55,7 @@
     }
 }
 
-@media(prefers-color-scheme:dark) {
+@media (prefers-color-scheme:dark) {
     :root {
     --primary: 211,  206,  193;
     --highlight: 80,  173,  215;
