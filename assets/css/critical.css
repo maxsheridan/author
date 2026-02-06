@@ -1,25 +1,21 @@
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
 .blurb-block {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 6rem;
+    column-gap: calc(6rem + 2vw);
     width: 100%;
+    max-width: calc(1400px + 2vw);
 }
 
 .book,
 .book-spacer {
-    flex: 0 0 25%;
-    min-width: min(360px, 75vw);
+    flex: 0 1 calc(300px + 4vw);
+}
+
+.text {
+    flex: 1 1 50%;
+    max-width: 56ch;
 }
 
 .book-spacer {
@@ -54,17 +50,8 @@ img {
     margin-block-start: var(--space-0);
 }
 
-p,
-li {
-    max-width: 59ch;
-}
-
-.blurb p {
-    max-width: 56ch;
-}
-
 .short p {
-    padding-right: 1.5rem;
+    padding-right: 2rem;
 }
 
 .small-text {
@@ -85,8 +72,8 @@ li {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-block-start: 5rem;
-    margin-block-end: 5rem;
+    margin-block-start: calc(5rem + 2vw);
+    margin-block-end: calc(5rem + 2vw);
 }
 
 svg.skull {

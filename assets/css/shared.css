@@ -85,10 +85,6 @@ html:focus-within {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     min-height: 100dvh;
     font-family: var(--body);
@@ -105,10 +101,15 @@ body {
     padding: 3rem 1.25rem;
 }
 
-.acme-all-purpose-wrapper.flex {
+.flex {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.center {
+    text-align: center;
 }
 
 header, 
@@ -125,6 +126,15 @@ footer {
 
 header {
     font-size: calc(var(--paragraph) * 1.3);
+}
+
+h1, 
+h2 {
+    font-family: var(--display);
+    font-size: calc(var(--paragraph) * 2);
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
 hr {
@@ -152,40 +162,12 @@ main {
     margin-block-start: var(--space-1);
 }
 
-li + li {
-    margin-block-start: var(--space--1);
-}
-
 .acme-article-wrapper > * + * {
     margin-block-start: var(--space-1);
 }
 
 article + div h2 {
     margin-block-start: var(--space-2);
-}
-
-.center {
-    text-align: center;
-}
-
-.flex-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.highlight {
-    color: rgb(var(--highlight));
-}
-
-h1, 
-h2 {
-    font-family: var(--display);
-    font-size: calc(var(--paragraph) * 2);
-    font-weight: 700;
-    line-height: 1.1;
-    text-transform: uppercase;
 }
 
 p, 
@@ -195,6 +177,10 @@ li {
 
 li {
     list-style: none;
+}
+
+li + li {
+    margin-block-start: var(--space--1);
 }
 
 a {
@@ -216,6 +202,10 @@ a {
 
 .linkstyling-off a {
     text-decoration: none;
+}
+
+.highlight {
+    color: rgb(var(--highlight));
 }
 
 footer {

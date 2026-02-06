@@ -8,7 +8,7 @@
         <link rel="preload" href="/assets/graphics/dillo_900.webp" as="font" type="image/webp" fetchpriority="high">
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-        <style>section{display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:1600px;margin:0 auto;}.blurb-block{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;column-gap:6rem;width:100%;}.book,.book-spacer{flex:0 0 25%;min-width:min(360px,75vw);}.book-spacer{height:0;background:red;}.book img,.book-spacer{aspect-ratio:450 / 728;}img{width:100%;height:auto;}.blurb-block.feature{row-gap:var(--space-1);}.blurb:not(.headline),.short .blurb + .blurb{margin-block-start:var(--space-2);}.headline{margin-block-start:var(--space-1);}.blurb>* + *{margin-block-start:var(--space-0);}p,li{max-width:59ch;}.blurb p{max-width:56ch;}.short p{padding-right:1.5rem;}.small-text{font-family:var(--display);font-size:calc(var(--paragraph) * .875);text-transform:uppercase;}.info .small-text{margin-block-start:3rem;font-family:var(--body);font-size:calc(var(--paragraph) * .9);text-transform:none;}.divider{display:flex;justify-content:space-between;align-items:center;width:100%;margin-block-start:5rem;margin-block-end:5rem;}svg.skull{width:1.5em;height:auto;}</style>
+        <style>.blurb-block{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;column-gap:calc(6rem + 2vw);width:100%;max-width:calc(1400px + 2vw);}.book,.book-spacer{flex:0 1 calc(300px + 4vw);}.text{flex:1 1 50%;max-width:56ch;}.book-spacer{height:0;background:red;}.book img,.book-spacer{aspect-ratio:450 / 728;}img{width:100%;height:auto;}.blurb-block.feature{row-gap:var(--space-1);}.blurb:not(.headline),.short .blurb + .blurb{margin-block-start:var(--space-2);}.headline{margin-block-start:var(--space-1);}.blurb>* + *{margin-block-start:var(--space-0);}.short p{padding-right:2rem;}.small-text{font-family:var(--display);font-size:calc(var(--paragraph) * .875);text-transform:uppercase;}.info .small-text{margin-block-start:3rem;font-family:var(--body);font-size:calc(var(--paragraph) * .9);text-transform:none;}.divider{display:flex;justify-content:space-between;align-items:center;width:100%;margin-block-start:calc(5rem + 2vw);margin-block-end:calc(5rem + 2vw);}svg.skull{width:1.5em;height:auto;}</style>
         <link rel="stylesheet" href="/assets/css/shared.min.css">
         <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon" sizes="48x48">
         <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml" sizes="any">
@@ -63,74 +63,72 @@
                 <p class="vh">
                     Max Sheridan is the author of Dillo and God's Speedboat. He lives in Norrköping, Sweden.
                 </p>
-                <section>
-                    <div class="blurb-block feature">
-                        <div class="book">
-                            <img 
-                                src="/assets/graphics/dillo_900.webp"
-                                fetchpriority="high"
-                                width="450"
-                                height="728"
-                                alt="Dillo book cover">
-                        </div>
-                        <div>
-                            <h2>Praise for Dillo</h2>
-                            <div class="blurb headline">
-                                <p>
-                                    “Max Sheridan’s book is destined to become one of those rediscovered treasures, like Moby Dick or Brave New World. One of those literary things that strangely becomes mandatory cool before growing from cult jewel into a dreaded tome for dissection by grandchildren in school. Until that terrible future arrives, and you are forced to understand the metaphors until they lose their power, you should buy a ticket and take this ride immediately. The fact that this book continues to go overlooked by the reading public is not only a travesty, it should be a crime.”
-                                </p>
-                                <p class="small-text">
-                                    J.D. Graves, Editor Econoclash Review
-                                </p>
-                            </div>
+                <div class="blurb-block feature">
+                    <div class="book">
+                        <img 
+                            src="/assets/graphics/dillo_900.webp"
+                            fetchpriority="high"
+                            width="450"
+                            height="728"
+                            alt="Dillo book cover">
+                    </div>
+                    <div class="text">
+                        <h2>Praise for Dillo</h2>
+                        <div class="blurb headline">
+                            <p>
+                                “Max Sheridan’s book is destined to become one of those rediscovered treasures, like Moby Dick or Brave New World. One of those literary things that strangely becomes mandatory cool before growing from cult jewel into a dreaded tome for dissection by grandchildren in school. Until that terrible future arrives, and you are forced to understand the metaphors until they lose their power, you should buy a ticket and take this ride immediately. The fact that this book continues to go overlooked by the reading public is not only a travesty, it should be a crime.”
+                            </p>
+                            <p class="small-text">
+                                J.D. Graves, Editor Econoclash Review
+                            </p>
                         </div>
                     </div>
-                    <div class="blurb-block">
-                        <div>
-                            <div class="blurb">
-                                <p>
-                                    “Pulpier than a box full of blood oranges, with the best, weirdest father son road trip this side of a Waylon Jennings song.”
-                                </p>
-                                <p class="small-text">
-                                    Joshua Corin, Author While Galileo Preys
-                                </p>
-                            </div>
-                            <div class="blurb">
-                                <p>
-                                    “A wicked new voice in crime and noir. A story that pulls you deep into the thorns. Writing that sings. Max Sheridan offers readers a captivat­ingly black and offbeat perspective of flawed people and nasty things.”
-                                </p>
-                                <p class="small-text">
-                                    Jack Getze, Editor Spinetingler Magazine
-                                </p>
-                            </div>
-                            <div class="blurb">
-                                <p>
-                                    “A fresh voice taking on uncharted portions of the American literary landscape. Unique, funny, and wholly Max Sheridan’s.”
-                                </p>
-                                <p class="small-text">
-                                    Tom Pitts, Author American Static
-                                </p>
-                            </div>
-                            <div class="blurb">
-                                <p>
-                                    “A compelling and original road story that moves with the ease of an El Camino cruising across a battered American highway.”
-                                </p>
-                                <p class="small-text">
-                                    Alex Cizak, Author Down on the Street
-                                </p>
-                            </div>
-                            <div class="info">
-                                <p class="small-text">
-                                    Pages: 206<br>
-                                    Year: 2018<br>
-                                    Publisher: Down and Out Books<br>
-                                    Available in: Digital and print
-                                </p>
-                            </div>
+                </div>
+                <div class="blurb-block">
+                    <div class="text">
+                        <div class="blurb">
+                            <p>
+                                “Pulpier than a box full of blood oranges, with the best, weirdest father son road trip this side of a Waylon Jennings song.”
+                            </p>
+                            <p class="small-text">
+                                Joshua Corin, Author While Galileo Preys
+                            </p>
                         </div>
-                        <div class="book-spacer"></div>
+                        <div class="blurb">
+                            <p>
+                                “A wicked new voice in crime and noir. A story that pulls you deep into the thorns. Writing that sings. Max Sheridan offers readers a captivat­ingly black and offbeat perspective of flawed people and nasty things.”
+                            </p>
+                            <p class="small-text">
+                                Jack Getze, Editor Spinetingler Magazine
+                            </p>
+                        </div>
+                        <div class="blurb">
+                            <p>
+                                “A fresh voice taking on uncharted portions of the American literary landscape. Unique, funny, and wholly Max Sheridan’s.”
+                            </p>
+                            <p class="small-text">
+                                Tom Pitts, Author American Static
+                            </p>
+                        </div>
+                        <div class="blurb">
+                            <p>
+                                “A compelling and original road story that moves with the ease of an El Camino cruising across a battered American highway.”
+                            </p>
+                            <p class="small-text">
+                                Alex Cizak, Author Down on the Street
+                            </p>
+                        </div>
+                        <div class="info">
+                            <p class="small-text">
+                                Pages: 206<br>
+                                Year: 2018<br>
+                                Publisher: Down and Out Books<br>
+                                Available in: Digital and print
+                            </p>
+                        </div>
                     </div>
-                </section>
+                    <div class="book-spacer"></div>
+                </div>
                 <div class="divider">
                     <hr aria-hidden="true">
                     <div class="gap--1"></div>
@@ -140,47 +138,45 @@
                     <div class="gap--1"></div>
                     <hr aria-hidden="true">
                 </div>
-                <section>
-                    <div class="blurb-block feature">
-                        <div class="book">
-                            <img 
-                                src="/assets/graphics/gs_900.webp"
-                                loading="lazy"
-                                width="450"
-                                height="728"
-                                alt="God’s Speedboat book cover">
-                        </div>
-                        <div class="short">
-                            <h2>Praise for God’s Speedboat</h2>
-                            <div>
-                                <div class="blurb headline">
-                                    <p>
-                                        “A swampy, sweaty, mutant Southern Gothic tale with a close kinship to Harry Crews and Don Winslow.”
-                                    </p>
-                                    <p class="small-text">
-                                        Manny Torres, Author Cabrones Perros
-                                    </p>
-                                </div>
-                                <div class="blurb">
-                                    <p> 
-                                        “A blistering ride.”
-                                    </p>
-                                    <p class="small-text">
-                                        Cody Sexton, Editor Anxiety Press
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="info">
+                <div class="blurb-block feature">
+                    <div class="book">
+                        <img 
+                            src="/assets/graphics/gs_900.webp"
+                            loading="lazy"
+                            width="450"
+                            height="728"
+                            alt="God’s Speedboat book cover">
+                    </div>
+                    <div class="text short">
+                        <h2>Praise for God’s Speedboat</h2>
+                        <div>
+                            <div class="blurb headline">
+                                <p>
+                                    “A swampy, sweaty, mutant Southern Gothic tale with a close kinship to Harry Crews and Don Winslow.”
+                                </p>
                                 <p class="small-text">
-                                    Pages: 260<br>
-                                    Year: 2023<br>
-                                    Publisher: Outcast Press<br>
-                                    Available in: Digital and print
+                                    Manny Torres, Author Cabrones Perros
+                                </p>
+                            </div>
+                            <div class="blurb">
+                                <p> 
+                                    “A blistering ride.”
+                                </p>
+                                <p class="small-text">
+                                    Cody Sexton, Editor Anxiety Press
                                 </p>
                             </div>
                         </div>
+                        <div class="info">
+                            <p class="small-text">
+                                Pages: 260<br>
+                                Year: 2023<br>
+                                Publisher: Outcast Press<br>
+                                Available in: Digital and print
+                            </p>
+                        </div>
                     </div>
-                </section>
+                </div>
             </main>
             <footer class="linkstyling-off" aria-label="Footer links">
                 <hr class="big-screen" aria-hidden="true">
