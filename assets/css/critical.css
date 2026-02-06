@@ -1,1 +1,83 @@
-.blurb-block{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;column-gap:calc(4rem + 4vw);width:100%;max-width:calc(1400px + 4vw);margin:0 auto;}.book,.book-spacer{flex:0 1 calc(300px + 4vw);}.text{flex:1 1 50%;max-width:56ch;}.book-spacer{height:0;background:red;}.book img,.book-spacer{aspect-ratio:450 / 728;}img{width:100%;height:auto;}.blurb-block.feature{row-gap:var(--space-1);}.blurb:not(.headline),.short .blurb + .blurb{margin-block-start:var(--space-2);}.headline{margin-block-start:var(--space-1);}.blurb>* + *{margin-block-start:var(--space-0);}.short p{padding-right:2rem;}.small-text{font-family:var(--display);font-size:calc(var(--paragraph) * .875);text-transform:uppercase;}.info .small-text{margin-block-start:3rem;font-family:var(--body);font-size:calc(var(--paragraph) * .9);text-transform:none;}.divider{display:flex;justify-content:space-between;align-items:center;width:100%;margin-block-start:calc(5rem + 2vw);margin-block-end:calc(5rem + 2vw);}svg.skull{width:1.5em;height:auto;}
+.blurb-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: calc(4rem + 4vw);
+    width: 100%;
+    max-width: calc(1400px + 4vw);
+    margin: 0 auto;
+}
+
+.book,
+.book-spacer {
+    flex: 0 1 calc(300px + 4vw);
+}
+
+.text {
+    flex: 1 1 50%;
+    max-width: 56ch;
+}
+
+.book-spacer {
+    height: 0;
+    background: red;
+}
+
+.book img,
+.book-spacer {
+    aspect-ratio: 450 / 728;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.blurb-block.feature {
+    row-gap: var(--space-1);
+}
+
+.blurb:not(.headline),
+.short .blurb + .blurb {
+    margin-block-start: var(--space-2);
+}
+
+.headline {
+    margin-block-start: var(--space-1);
+}
+
+.blurb > * + * {
+    margin-block-start: var(--space-0);
+}
+
+.short p {
+    padding-right: 2rem;
+}
+
+.small-text {
+    font-family: var(--display);
+    font-size: calc(var(--paragraph) * .875);
+    text-transform: uppercase;
+}
+
+.info .small-text {
+    margin-block-start: 3rem;
+    font-family: var(--body);
+    font-size: calc(var(--paragraph) * .9);
+    text-transform: none;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-block-start: calc(5rem + 2vw);
+    margin-block-end: calc(5rem + 2vw);
+}
+
+svg.skull {
+    width: 1.5em;
+    height: auto;
+}
