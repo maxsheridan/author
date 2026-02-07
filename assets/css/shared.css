@@ -157,7 +157,7 @@ main {
     padding: var(--space-3)  0;
 }
 
-.heading > * + * ,
+.with-heading > * + * ,
 .acme-article-wrapper > * + *  {
     margin-block-start: var(--space-1);
 }
