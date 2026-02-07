@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: calc(4rem + 4vw);
+    column-gap: var(--space-3);
     width: 100%;
     max-width: calc(1400px + 4vw);
     margin: 0 auto;
@@ -73,8 +73,8 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-block-start: calc(5rem + 2vw);
-    margin-block-end: calc(5rem + 2vw);
+    margin-block-end: var(--space-3);
+    margin-block-end: var(--space-3);
 }
 
 svg.skull {

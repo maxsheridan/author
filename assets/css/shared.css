@@ -154,15 +154,12 @@ hr {
 }
 
 main {
-    padding: 4.5rem 0;
+    padding: var(--space-3)  0;
 }
 
 .heading-with-text > * + *,
-.heading-no-text > * + * {
-    margin-block-start: var(--space-1);
-}
-
-.acme-article-wrapper > * + * {
+.heading-no-text > * + *,
+.acme-article-wrapper > * + *  {
     margin-block-start: var(--space-1);
 }
 
