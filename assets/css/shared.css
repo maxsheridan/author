@@ -98,7 +98,7 @@ body {
 
 .acme-all-purpose-wrapper {
     width: 100%;
-    padding: 3rem 1.25rem;
+    padding: var(--space-2) 1.25rem;
 }
 
 .flex {
@@ -157,8 +157,7 @@ main {
     padding: var(--space-3)  0;
 }
 
-.heading-with-text > * + *,
-.heading-no-text > * + *,
+.heading,
 .acme-article-wrapper > * + *  {
     margin-block-start: var(--space-1);
 }
