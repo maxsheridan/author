@@ -34,7 +34,7 @@
           
           <main id="main-content" tabindex="-1">
             <div class="acme-content-wrapper">
-              <div class="heading-with-text">
+              <div class="with-heading">
                 <h1>RSS Feed</h1>
                 <p>
                   This is an old-school RSS feed. Copy the URL below and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
