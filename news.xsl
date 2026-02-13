@@ -39,7 +39,7 @@
                     aria-label="Copy RSS feed URL to clipboard">
               <xsl:value-of select="/rss/channel/atom:link/@href"/>
             </button>
-            <hr class="rss-feed"/>
+            <hr class="rss-feed" aria-hidden="true"/>
             <xsl:for-each select="/*[local-name()='rss']/*[local-name()='channel']/*[local-name()='item']">
             <div class="rss-item">
               <span class="rss-title">
