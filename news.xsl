@@ -13,36 +13,29 @@
         <meta name="color-scheme" content="light dark"/>
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="/assets/css/shared.min.css"/>
         <style>html,body{background-color:rgb(251, 250, 247)}@media(prefers-color-scheme:dark){html,body{background-color:rgb(22, 23, 24);}}.subscribe{width:max-content;margin-block-start:var(--space-1);margin-block-end:var(--space-1);text-decoration: underline;text-decoration-thickness:2px;text-decoration-color:rgb(var(--accent));text-underline-offset:2px;text-decoration-skip-ink:all;;word-break:break-all;cursor:pointer;transition:background .2s ease}@media(hover:hover) and (pointer:fine){.subscribe:hover{opacity:.6}}.rss-item + .rss-item{margin-block-start:var(--space-1)}hr.rss{margin-block-start:var(--space-2);margin-block-end:var(--space-2)}p.pub-date{color:rgb(var(--accent))}</style>
+        <link rel="stylesheet" href="/assets/css/shared.css"/>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <title>RSS Updates - Max Sheridan</title>
       </head>
       <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
-        <div class="acme-all-purpose-wrapper flex">
-          <header class="linkstyling-off">
-            <hr aria-hidden="true"/>
-            <div class="gap--1"></div>
-            <a href="/" class="site-title" aria-label="Max Sheridan home">
-              Max Sheridan
-            </a>
-            <div class="gap--1"></div>
-            <hr aria-hidden="true"/>
-          </header>
-          
-          <main id="main-content" tabindex="-1">
-            <div class="acme-content-wrapper">
-              <div class="with-heading">
-                <h1>RSS Feed</h1>
-                <p>
-                  This is an old-school RSS feed. Copy the URL below and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
-                </p>
-                <p class="subscribe" onclick="copyToClipboard(this)"><xsl:value-of select="/rss/channel/atom:link/@href"/></p>
-              </div>
-              <hr class="rss"/>
-              <xsl:for-each select="/*[local-name()='rss']/*[local-name()='channel']/*[local-name()='item']">
+        <header class="linkstyling-off">
+          <hr aria-hidden="true"/>
+          <a href="/" aria-label="Max Sheridan home" aria-current="page">Max Sheridan</a>
+          <hr aria-hidden="true"/>
+        </header>
+        
+        <main id="main-content" class="flex" tabindex="-1">
+          <div>
+            <h1>RSS Feed</h1>
+            <p>
+              This is an old-school RSS feed. Copy the URL below and paste it into your feed reader and you’re set. Or click on a link to read my latest updates.
+            </p>
+            <p class="subscribe" onclick="copyToClipboard(this)"><xsl:value-of select="/rss/channel/atom:link/@href"/></p>
+            <hr class="rss"/>
+            <xsl:for-each select="/*[local-name()='rss']/*[local-name()='channel']/*[local-name()='item']">
               <div class="rss-item">
                 <span class="rss-title">
                   <a href="{link}">
@@ -54,29 +47,23 @@
                   <xsl:value-of select="substring(pubDate, 6, 11)"/>
                 </p>
               </div>
-              </xsl:for-each>
-            </div>
-          </main>
-          
-          <footer class="linkstyling-off" aria-label="Footer links">
-            <hr class="big-screen" aria-hidden="true"/>
-            <div class="gap--1 big-screen"></div>
-            <a href="/short-fiction">Short Fiction</a>
-            <div class="gap--1"></div>
-            <hr aria-hidden="true"/>
-            <div class="gap--1"></div>
-            <a href="/news">News</a>
-            <div class="gap--1"></div>
-            <hr aria-hidden="true"/>
-            <div class="gap--1"></div>
-            <button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button>
-            <hr class="big-screen" aria-hidden="true"/>
-          </footer>
-        </div>
-        <script>
-          function copyToClipboard(element){const text=element.textContent;navigator.clipboard.writeText(text).then(()=>{const originalText=element.textContent;const originalColor=element.style.color;const originalDecoration=element.style.textDecoration;element.textContent="Copied!";element.style.color="rgb(var(--primary))";element.style.textDecoration="none";setTimeout(()=>{element.textContent=originalText;element.style.color=originalColor;element.style.textDecoration=originalDecoration},2000)}).catch(err=>{console.error('Failed to copy:',err)})}
-          function copyEmail(){const email="max@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="rgb(var(--primary))";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}
-        </script>
+            </xsl:for-each>
+          </div>
+        </main>
+        
+        <footer class="linkstyling-off" aria-label="Footer">
+          <ul>
+            <li class="inline-hr big-screen" aria-hidden="true"></li>
+            <li><a href="/short-fiction" aria-current="page">Short Fiction</a></li>
+            <li class="inline-hr" aria-hidden="true"></li>
+            <li><a href="/news">News</a></li>
+            <li class="inline-hr" aria-hidden="true"></li>
+            <li><button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button></li>
+            <li class="inline-hr big-screen" aria-hidden="true"></li>
+          </ul>
+        </footer>
+        <script src="/assets/js/copy_email" defer="defer"></script>
+        <script>function copyToClipboard(element){const text=element.textContent;navigator.clipboard.writeText(text).then(()=>{const originalText=element.textContent;const originalColor=element.style.color;const originalDecoration=element.style.textDecoration;element.textContent="Copied!";element.style.color="rgb(var(--primary))";element.style.textDecoration="none";setTimeout(()=>{element.textContent=originalText;element.style.color=originalColor;element.style.textDecoration=originalDecoration},2000)}).catch(err=>{console.error('Failed to copy:',err)})}</script>
       </body>
     </html>
   </xsl:template>

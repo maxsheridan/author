@@ -72,8 +72,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin-block-end: var(--space-3);
+    gap: var(--space--1);
+    margin-block-start: var(--space-3);
     margin-block-end: var(--space-3);
 }
 

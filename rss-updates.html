@@ -9,7 +9,7 @@
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="stylesheet" href="/assets/css/shared.min.css">
-        <style>html{scroll-behavior:smooth}main.rss{margin-block-end:calc(var(--space-2) + 2vw);padding-bottom:0;} main.rss>div>*+*{margin-block-start:calc(var(--space-2) + 2vw)}.rss article + article{margin-block-start:calc(var(--space-2) + 2vw)}.rss article >*+*{margin-block-start:var(--space-1)}.rss article{display:flex;flex-direction:column;justify-content:center;min-width:min(100%,calc(54ch + 9rem));min-height:25rem;border-radius:.5rem;box-shadow:rgba(var(--highlight),1) 0px 0px 0px 2px inset,rgb(var(--background)) 8px -8px 0px -3px,rgba(var(--highlight), 0.5) 8px -8px,rgb(var(--background)) 16px -16px 0px -3px,rgba(var(--highlight), 0.25) 16px -16px;margin-inline-end:1rem;padding:3rem;background-color:rgb(var(--background));scroll-margin-block:5rem}.rss article.highlighted{outline: 2px solid rgb(var(--highlight));background-color:rgba(var(--accent),.1);transition:background-color 0.3s,outline 0.3s}.rss p{max-width:54ch}</style>
+        <style>html{scroll-behavior:smooth}.rss{margin-block-end:calc(var(--space-3) + 2vw);padding-bottom:0;}.rss article:first-of-type,.rss article + article{margin-block-start:calc(var(--space-2) + 2vw)}.rss article>*+*{margin-block-start:var(--space-1)}.rss article{display:flex;flex-direction:column;justify-content:center;min-width:min(100%,calc(54ch + 6rem));min-height:25rem;border-radius:.5rem;box-shadow:rgba(var(--highlight),1) 0px 0px 0px 2px inset,rgb(var(--background)) 8px -8px 0px -3px,rgba(var(--highlight), 0.5) 8px -8px,rgb(var(--background)) 16px -16px 0px -3px,rgba(var(--highlight), 0.25) 16px -16px;margin-inline-end:1rem;padding:3rem;background-color:rgb(var(--background));scroll-margin-block:5rem}.rss article.highlighted{outline: 2px solid rgb(var(--highlight));background-color:rgba(var(--accent),.1);transition:background-color 0.3s,outline 0.3s}.rss p{max-width:54ch}</style>
         <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon" sizes="48x48" >
         <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml" sizes="any">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=3" type="image/png">
@@ -45,113 +45,99 @@
     </head>
     <body>
         <a href="#main-content" class="skip-link">Skip to content</a>
-        <div class="acme-all-purpose-wrapper flex">
-            <header class="linkstyling-off">
-                <hr aria-hidden="true">
-                <div class="gap--1"></div>
-                <a href="/" aria-label="Max Sheridan home">
-                    Max Sheridan
-                </a>
-                <div class="gap--1"></div>
-                <hr aria-hidden="true">
-            </header>
-            <main id="main-content" class="rss" tabindex="-1">
-                <div class="acme-content-wrapper">
-                    <div class="flex with-heading">
-                        <h1>RSS Updates</h1>
-                        <p>My latest news with links to new stories, books, and events.</p>
-                    </div>
-                    <div>
-                        <article id="mouse-died-today">
-                            <span class="highlight">05 May 2025</span>
-                            <h2>Mouse Died Today</h2>
-                            <p>
-                                Read my new short story Mouse Died Today in my favorite humor zine, <a href="https://www.johnnyamerica.com/"> Johnny America!</a> 
-                            </p>
-                        </article>
-                        <article id="embrace-the-depravity">
-                            <span class="highlight">05 April 2025</span>
-                            <h2>Embrace the Depravity</h2>
-                            <p>
-                                My latest flash is out in Two-Headed Zine’s brand new, extra creepy third volume <a href="https://www.twoheadedzine.com/product-page/embrace-the-depravity">Embrace the Depravity.</a>
-                            </p> 
-                        </article>
-                        <article id="bobby-two-winds">
-                            <span class="highlight">28 Dec 2024</span>
-                            <h2>Bobby Two Winds</h2>
-                            <p>
-                                A Two-Spirit janitor finds brotherly love and syphilis at a logging camp in the wilds of Canada. Read Bobby Two Winds in <a href="https://issuu.com/pulplitmag/docs/queer_westerns-1">Pulp Queer Westerns.</a>
-                            </p>
-                        </article>
-                        <article id="barry-denver-stole-my-wife">
-                            <span class="highlight">21 Oct 2024</span>
-                            <h2>Barry Denver Stole My Wife</h2>
-                            <p>
-                                <a href="https://www.bridgeeight.com/barry-denver-stole-my-wife/">New short story</a> at Bridge Eight Literary today!
-                            </p>
-                        </article>
-                        <article id="gods-speedboat">
-                            <span class="highlight">07 Dec 2023</span>
-                            <h2>God’s Speedboat</h2>
-                            <p>
-                                My new novel from Outcast Press is out. God’s Speedboat is part Southern Gothic, part cannibal coming-of-age story, part splatterpunk Western. Florida school libraries, here we come. Ha ha. <a href="https://www.tinyurl.com/gods-speedboat-novel">Get your copy here.</a>
-                            </p>
-                        </article>
-                        <article id="reading-at-prozak-18.04.23">
-                            <span class="highlight">18 April 2023</span>
-                            <h2>Reading at Prozak</h2>
-                            <p>
-                                I’ll be back at Prozak Kafeneion on April 29 at 8PM reading some new flash fiction.
-                            </p>
-                        </article>
-                        <article id="boomerangs">
-                            <span class="highlight">01 Mar 2023</span>
-                            <h2>Boomerangs</h2>
-                            <p>
-                                A rip-roaring tale of show rats and traveling cocktail salesmen. Read Boomerangs in  <a href="https://nudebrucereview.files.wordpress.com/2023/02/nbr-issue-13-.pdf"> Nude Bruce Review #13.</a>
-                            </p>
-                        </article>
-                        <article id="reading-at-prozak-01.02.23">
-                            <span class="highlight">01 Feb 2023</span>
-                            <h2>Reading at Prozak</h2>
-                            <p>
-                                Reading at Prozak Kafeneion for Open Mic Night Unmasked on March 4 at 8PM.
-                            </p>
-                        </article>
-                        <article id="i-got-a-social-worker">
-                            <span class="highlight">18 Jan 2023</span>
-                            <h2>I Got a Social Worker</h2>
-                            <p>
-                                Spankin’ new pandemic-era flash in <a href="https://midlvlmag.com/max-sheridan-sw/">Mid-Level Management Magazine Issue 3.</a>
-                            </p>
-                        </article>
-                        <article id="a-penis-boot">
-                            <span class="highlight">03 Jan 2023</span>
-                            <h2>A Penis Boot</h2>
-                            <p>
-                                Poet warrior Narting Tadoo explores the loss of his best friend’s feet to Big Nar Nar the leper in <a href="https://letsstabcaesar.bigcartel.com/product/volume-iii-print-edition">Let’s Stab Caesar! Volume III, the Feral Edition.</a>
-                            </p>
-                        </article>
-                    </div>
-                </div>
-            </main>
-            <footer class="linkstyling-off" aria-label="Footer links">
-                <hr class="big-screen" aria-hidden="true">
-                <div class="gap--1 big-screen"></div>
-                <a href="/short-fiction">Short Fiction</a>
-                <div class="gap--1"></div>
-                <hr aria-hidden="true">
-                <div class="gap--1"></div>
-                <a href="/news">News</a>
-                <div class="gap--1"></div>
-                <hr aria-hidden="true">
-                <div class="gap--1"></div>
-                <button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button>
-                <div class="gap--1 big-screen"></div>
-                <hr class="big-screen" aria-hidden="true">
-            </footer>
-        </div>
-        <script>function copyEmail(){const email="max@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="var(--primary)";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
+        <header class="linkstyling-off">
+            <hr aria-hidden="true">
+            <a href="/" aria-label="Max Sheridan home">Max Sheridan</a>
+            <hr aria-hidden="true">
+        </header>
+        <main id="main-content" class="flex rss" tabindex="-1">
+            <div class="flex">
+                <h1>RSS Updates</h1>
+                <p>My latest news with links to new stories, books, and events.</p>
+                <article id="mouse-died-today">
+                    <span class="highlight">05 May 2025</span>
+                    <h2>Mouse Died Today</h2>
+                    <p>
+                        Read my new short story Mouse Died Today in my favorite humor zine, <a href="https://www.johnnyamerica.com/"> Johnny America!</a> 
+                    </p>
+                </article>
+                <article id="embrace-the-depravity">
+                    <span class="highlight">05 April 2025</span>
+                    <h2>Embrace the Depravity</h2>
+                    <p>
+                        My latest flash is out in Two-Headed Zine’s brand new, extra creepy third volume <a href="https://www.twoheadedzine.com/product-page/embrace-the-depravity">Embrace the Depravity.</a>
+                    </p> 
+                </article>
+                <article id="bobby-two-winds">
+                    <span class="highlight">28 Dec 2024</span>
+                    <h2>Bobby Two Winds</h2>
+                    <p>
+                        A Two-Spirit janitor finds brotherly love and syphilis at a logging camp in the wilds of Canada. Read Bobby Two Winds in <a href="https://issuu.com/pulplitmag/docs/queer_westerns-1">Pulp Queer Westerns.</a>
+                    </p>
+                </article>
+                <article id="barry-denver-stole-my-wife">
+                    <span class="highlight">21 Oct 2024</span>
+                    <h2>Barry Denver Stole My Wife</h2>
+                    <p>
+                        <a href="https://www.bridgeeight.com/barry-denver-stole-my-wife/">New short story</a> at Bridge Eight Literary today!
+                    </p>
+                </article>
+                <article id="gods-speedboat">
+                    <span class="highlight">07 Dec 2023</span>
+                    <h2>God’s Speedboat</h2>
+                    <p>
+                        My new novel from Outcast Press is out. God’s Speedboat is part Southern Gothic, part cannibal coming-of-age story, part splatterpunk Western. Florida school libraries, here we come. Ha ha. <a href="https://www.tinyurl.com/gods-speedboat-novel">Get your copy here.</a>
+                    </p>
+                </article>
+                <article id="reading-at-prozak-18.04.23">
+                    <span class="highlight">18 April 2023</span>
+                    <h2>Reading at Prozak</h2>
+                    <p>
+                        I’ll be back at Prozak Kafeneion on April 29 at 8PM reading some new flash fiction.
+                    </p>
+                </article>
+                <article id="boomerangs">
+                    <span class="highlight">01 Mar 2023</span>
+                    <h2>Boomerangs</h2>
+                    <p>
+                        A rip-roaring tale of show rats and traveling cocktail salesmen. Read Boomerangs in  <a href="https://nudebrucereview.files.wordpress.com/2023/02/nbr-issue-13-.pdf"> Nude Bruce Review #13.</a>
+                    </p>
+                </article>
+                <article id="reading-at-prozak-01.02.23">
+                    <span class="highlight">01 Feb 2023</span>
+                    <h2>Reading at Prozak</h2>
+                    <p>
+                        Reading at Prozak Kafeneion for Open Mic Night Unmasked on March 4 at 8PM.
+                    </p>
+                </article>
+                <article id="i-got-a-social-worker">
+                    <span class="highlight">18 Jan 2023</span>
+                    <h2>I Got a Social Worker</h2>
+                    <p>
+                        Spankin’ new pandemic-era flash in <a href="https://midlvlmag.com/max-sheridan-sw/">Mid-Level Management Magazine Issue 3.</a>
+                    </p>
+                </article>
+                <article id="a-penis-boot">
+                    <span class="highlight">03 Jan 2023</span>
+                    <h2>A Penis Boot</h2>
+                    <p>
+                        Poet warrior Narting Tadoo explores the loss of his best friend’s feet to Big Nar Nar the leper in <a href="https://letsstabcaesar.bigcartel.com/product/volume-iii-print-edition">Let’s Stab Caesar! Volume III, the Feral Edition.</a>
+                    </p>
+                </article>
+            </div>
+        </main>
+        <footer class="linkstyling-off" aria-label="Footer">
+            <ul>
+                <li class="inline-hr big-screen" aria-hidden="true"></li>
+                <li><a href="/short-fiction">Short Fiction</a></li>
+                <li class="inline-hr" aria-hidden="true"></li>
+                <li><a href="/news">News</a></li>
+                <li class="inline-hr" aria-hidden="true"></li>
+                <li><button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button></li>
+                <li class="inline-hr big-screen" aria-hidden="true"></li>
+            </ul>
+        </footer>
+        <script src="/assets/js/copy_email.js" defer></script>
         <script>document.addEventListener("DOMContentLoaded",()=>{const main=document.getElementById("main-content");const highlightArticle=(id)=>{main.querySelectorAll("article").forEach(article=>{article.classList.remove("highlighted")});const target=document.getElementById(id);if(target){target.classList.add("highlighted")}};if(window.location.hash){const targetId=window.location.hash.substring(1);highlightArticle(targetId)}window.addEventListener("hashchange",()=>{const targetId=window.location.hash.substring(1);highlightArticle(targetId)})});</script>
     </body>
 </html>
