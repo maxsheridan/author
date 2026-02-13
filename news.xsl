@@ -67,8 +67,10 @@
             <li class="inline-hr big-screen" aria-hidden="true"></li>
           </ul>
         </footer>
-        <script src="/assets/js/copy_email" defer="defer"></script>
-        <script>function copyToClipboard(element){const text=element.textContent;navigator.clipboard.writeText(text).then(()=>{const originalText=element.textContent;const originalColor=element.style.color;const originalDecoration=element.style.textDecoration;element.textContent="Copied!";element.style.color="rgb(var(--primary))";element.style.textDecoration="none";setTimeout(()=>{element.textContent=originalText;element.style.color=originalColor;element.style.textDecoration=originalDecoration},2000)}).catch(err=>{console.error('Failed to copy:',err)})}</script>
+        <script>
+          function copyToClipboard(element){const text=element.textContent;navigator.clipboard.writeText(text).then(()=>{const originalText=element.textContent;const originalColor=element.style.color;const originalDecoration=element.style.textDecoration;element.textContent="Copied!";element.style.color="rgb(var(--primary))";element.style.textDecoration="none";setTimeout(()=>{element.textContent=originalText;element.style.color=originalColor;element.style.textDecoration=originalDecoration},2000)}).catch(err=>{console.error('Failed to copy:',err)})}
+          function copyEmail(){const email="max@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="var(--primary)";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}
+        </script>
       </body>
     </html>
   </xsl:template>
