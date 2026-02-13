@@ -13,8 +13,8 @@
         <meta name="color-scheme" content="light dark"/>
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <style>html,body{background-color:rgb(251, 250, 247)}@media(prefers-color-scheme:dark){html,body{background-color:rgb(22, 23, 24);}}.subscribe{width:max-content;margin-block-start:var(--space-1);margin-block-end:var(--space-1);text-decoration: underline;text-decoration-thickness:2px;text-decoration-color:rgb(var(--accent));text-underline-offset:2px;text-decoration-skip-ink:all;;word-break:break-all;cursor:pointer;transition:background .2s ease}@media(hover:hover) and (pointer:fine){.subscribe:hover{opacity:.6}}.rss-item + .rss-item{margin-block-start:var(--space-1)}hr.rss{margin-block-start:var(--space-2);margin-block-end:var(--space-2)}p.pub-date{color:rgb(var(--accent))}</style>
-        <link rel="stylesheet" href="/assets/css/shared.css"/>
+        <style>html,body{background-color:rgb(251, 250, 247)}@media(prefers-color-scheme:dark){html,body{background-color:rgb(22, 23, 24);}}.subscribe{width:max-content;margin-block-start:var(--space-1);margin-block-end:var(--space-1);text-decoration: underline;text-decoration-thickness:2px;text-decoration-color:rgb(var(--accent));text-underline-offset:2px;text-decoration-skip-ink:all;;word-break:break-all;cursor:pointer;transition:background .2s ease}@media(hover:hover) and (pointer:fine){.subscribe:hover{opacity:.6}}.rss-item>*+*{margin-block-start:(var(--space-0))}.rss-item + .rss-item{margin-block-start:var(--space-1)}hr.rss{margin-block-start:var(--space-2);margin-block-end:var(--space-2)}p.pub-date{color:rgb(var(--accent))}</style>
+        <link rel="stylesheet" href="/assets/css/shared.css?v=2"/>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <title>RSS Updates - Max Sheridan</title>
@@ -23,7 +23,7 @@
         <a href="#main-content" class="skip-link">Skip to content</a>
         <header class="linkstyling-off">
           <hr aria-hidden="true"/>
-          <a href="/" aria-label="Max Sheridan home" aria-current="page">Max Sheridan</a>
+          <a href="/" aria-label="Max Sheridan home">Max Sheridan</a>
           <hr aria-hidden="true"/>
         </header>
         
@@ -36,17 +36,17 @@
             <p class="subscribe" onclick="copyToClipboard(this)"><xsl:value-of select="/rss/channel/atom:link/@href"/></p>
             <hr class="rss"/>
             <xsl:for-each select="/*[local-name()='rss']/*[local-name()='channel']/*[local-name()='item']">
-              <div class="rss-item">
-                <span class="rss-title">
-                  <a href="{link}">
-                    <xsl:value-of select="title"/>
-                  </a>
-                </span>
-                <p class="pub-date">
-                  Published on:
-                  <xsl:value-of select="substring(pubDate, 6, 11)"/>
-                </p>
-              </div>
+            <div class="rss-item">
+              <span class="rss-title">
+                <a href="{link}">
+                  <xsl:value-of select="title"/>
+                </a>
+              </span>
+              <p class="pub-date">
+                Published on:
+                <xsl:value-of select="substring(pubDate, 6, 11)"/>
+              </p>
+            </div>
             </xsl:for-each>
           </div>
         </main>

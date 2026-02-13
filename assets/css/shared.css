@@ -85,6 +85,8 @@ html:focus-within {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     min-height: 100dvh;
     padding: var(--space-2) 1.25rem;
@@ -102,9 +104,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
-.flex div >  * + *:not(h2):not(hr)  {
+.flex div >  * + *:not(h2):not(hr) {
     margin-block-start: var(--space-1);
 }
 
