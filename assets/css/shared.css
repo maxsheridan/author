@@ -235,6 +235,10 @@ button:focus-visible,
     border-radius: .25rem;
 }
 
+[tabindex="-1"]:focus {
+    outline: none;
+}
+
 .skip-link {
     position: absolute;
     top: -999px;
