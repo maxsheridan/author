@@ -144,16 +144,6 @@ h2 {
     text-transform: uppercase;
 }
 
-.gap--2 {
-    display: inline-block;
-    width: var(--space--2);
-}
-
-.gap--1 {
-    display: inline-block;
-    width: var(--space--1);
-}
-
 main {
     padding: var(--space-3)  0;
 }
@@ -167,12 +157,20 @@ p.news-item {
     max-width: 58ch;
 }
 
+.news-item .with-gap {
+    margin-inline-end: var(--space--1);
+}
+
 li {
     list-style: none;
 }
 
 li:not(.inline-hr) + li:not(.inline-hr) {
     margin-block-start: var(--space--1);
+}
+
+.highlight {
+    color: rgb(var(--highlight));
 }
 
 a {
@@ -218,10 +216,6 @@ button:focus-visible,
 
 [tabindex="-1"]:focus {
     outline: none;
-}
-
-.highlight {
-    color: rgb(var(--highlight));
 }
 
 footer ul {
