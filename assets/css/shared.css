@@ -160,7 +160,11 @@ main {
 
 p, 
 li {
-    max-width: 59ch;
+    max-width: 54ch;
+}
+
+p.news-item {
+    max-width: 58ch;
 }
 
 li {
