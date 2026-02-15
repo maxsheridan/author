@@ -14,7 +14,7 @@
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
         <style>html,body{background-color:rgb(251, 250, 247)}@media(prefers-color-scheme:dark){html,body{background-color:rgb(22, 23, 24);}}.subscribe{width:max-content;max-width:100%; text-transform:inherit;text-decoration:underline;text-decoration-thickness:2px;text-decoration-color:rgb(var(--accent));text-underline-offset:2px;text-decoration-skip-ink:all;;word-break:break-all;cursor:pointer;transition:background .2s ease;}@media(hover:hover) and (pointer:fine){.subscribe:hover{opacity:.6};}.flex .rss-item>*+*{margin-block-start:var(--space--2);}hr.rss-feed{margin-block-start:var(--space-2);margin-block-end:var(--space-2);}p.pub-date{color:rgb(var(--accent));}</style>
-        <link rel="stylesheet" href="/assets/css/shared.min.css?v=2"/>
+        <link rel="stylesheet" href="/assets/css/shared.min.css?v=3"/>
         <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="48x48"/>
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any"/>
         <title>RSS Updates - Max Sheridan</title>
