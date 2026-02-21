@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="light dark">
+        <link rel="preload" href="/assets/type/monaspacexenon_medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <style>
+            @font-face {
+                font-family: 'Monaspace Xenon';
+                src: url(/assets/type/monaspacexenon_medium.woff2) format('woff2');
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+            :root {
+                --font: 'Monaspace Xenon', monospace;
+                --paragraph: calc(1rem + .5vw);
+                --primary: #423B77;
+                --background: #E8EBE8;
+            }
+            
+            @media (prefers-color-scheme:dark) {
+                :root {
+                    --primary: #E8EBE8;
+                    --background: #1F1C30;
+                }
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                box-sizing: border-box;
+                background: none;
+            }
+            
+            html {
+                font-size: 16px;
+                text-size-adjust: none;
+                -webkit-text-size-adjust: none;
+                -webkit-tap-highlight-color: #fff0;
+            }
+            
+            body {
+                font-family: var(--font);
+                font-style: normal;
+                line-height: 1.5;
+                color: var(--primary);
+                background-color: var(--background);
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                min-height: 100dvh;
+                padding: 1.25rem;
+                border: 1rem solid;
+            }
+
+            p {
+                font-size: var(--paragraph);
+            }
+
+            h1 {
+                font-size: calc(var(--paragraph) * 4);
+            }
+        </style>
+        <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon" sizes="48x48" >
+        <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml" sizes="any">
+        <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=3" type="image/png">
+        <title>Writer Not Found - Max Sheridan</title>
+    </head>
+    <body>
+        <main>
+            <h1>704</h1>
+            <p>Writer not found.</p>
+        </main>
+    </body>
+</html>
