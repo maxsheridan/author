@@ -11,7 +11,7 @@
         <style>@font-face{font-family:'Font';src:url('/assets/type/monaspacexenon_regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}:root{--primary:#423B77;--progress:#B3B2B2;--background:#E8EBE8;--width:72ch;--flow:calc(4rem + 2vw);}@media(prefers-color-scheme:dark){:root{--primary:#E8EBE8;--progress:#8D8C8C;--background:#1F1C30}}*{margin:0;padding:0;border:0;box-sizing:border-box;background:none;}html{font-size:16px;text-size-adjust:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent;overscroll-behavior:none;}body{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh;padding:2rem 1.25rem;font-family:'Font',Courier,monospace;font-size:calc(1rem + .25vw);font-weight:400;line-height:1.6;color:var(--primary);background-color:var(--background);}header,footer{display:flex;justify-content:space-between;align-items:center;gap:.5em;width:100%;}.site-title{font-size:inherit;font-weight:400;}h2{font-weight:400;}main{flex:1;padding:var(--flow) 0;}ul{list-style:none;max-width:var(--width);}h2 ~ h2{margin-block-start:var(--flow);}h2 + *{margin-block-start:calc(var(--flow) / 2.5);}li + li{margin-block-start:1rem;}hr{flex:1;margin-top:6px;border-top:2px dotted var(--primary);background-color:transparent;}</style>
         <link rel="stylesheet" href="/assets/css/extra.css" media="print" onload="this.media='all'">
         <noscript><link rel="stylesheet" href="/assets/css/extra.css"></noscript>
-        <link rel="icon" href="/favicon.ico?v=5" type="image/x-icon" sizes="48x48 32x32 16x16">
+        <link rel="icon" href="/favicon.ico?v=5" type="image/x-icon" sizes="48x48 32x32">
         <link rel="icon" href="/favicon.svg?v=5" type="image/svg+xml" sizes="any">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=5" type="image/png">
         <link rel="canonical" href="https://maxsheridan.com">
@@ -199,5 +199,17 @@
             <p>©2012-26</p>
         </footer>
         <script>document.addEventListener("DOMContentLoaded",()=>{const updateTrackStatus=(trackNumber)=>{const statusElement=document.getElementById('track-status');if(statusElement){statusElement.textContent=`Track ${trackNumber} of 4`}};const resetAudioPlayers=()=>{document.querySelectorAll(".audio-player").forEach((e)=>{const audio=e.querySelector("audio");const playPause=e.querySelector(".play-pause");const progress=e.querySelector(".progress input");const progressFill=e.querySelector(".progress-filled");audio.currentTime=0;audio.pause();playPause.className="play-pause play";playPause.innerHTML=`<svg class="icon" viewBox="0 0 30 30"><polygon points="10,6.9 10,23.1 24,15"></polygon></svg>`;progressFill.style.width="0%";progress.value=0})};resetAudioPlayers();document.querySelectorAll(".audio-player").forEach((e)=>{const audio=e.querySelector("audio");const playPause=e.querySelector(".play-pause");const progress=e.querySelector(".progress input");const progressFill=e.querySelector(".progress-filled");playPause.addEventListener("click",()=>{if(!audio.src||audio.src===''){const src=audio.getAttribute('data-src');if(src){audio.src=src}}if(audio.paused){document.querySelectorAll("audio").forEach((a)=>a!==audio&&a.pause());audio.play();const trackNumber=playPause.dataset.track;if(trackNumber){updateTrackStatus(trackNumber)}}else{audio.pause()}});audio.addEventListener("play",()=>{playPause.className="play-pause pause";playPause.innerHTML=`<svg class="icon" viewBox="0 0 30 30"><rect x="10" y="8" width="3" height="14"></rect><rect x="17" y="8" width="3" height="14"></rect></svg>`});audio.addEventListener("pause",()=>{playPause.className="play-pause play";playPause.innerHTML=`<svg class="icon" viewBox="0 0 30 30"><polygon points="10,6.9 10,23.1 24,15"></polygon></svg>`});audio.addEventListener("timeupdate",()=>{const percentage=(audio.currentTime/audio.duration)*100||0;progressFill.style.width=`${percentage}%`;progress.value=percentage});progress.addEventListener("input",()=>{audio.currentTime=(progress.value/100)*audio.duration})})});window.addEventListener("load",()=>{document.querySelectorAll(".audio-player audio").forEach((audio)=>{audio.currentTime=0;audio.pause()})})</script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Max Sheridan",
+                "description": "Max Sheridan is the author of Dillo and God's Speedboat. He lives in Norrköping, Sweden.",
+                "url": "https://maxsheridan.com",
+                "image": "https://maxsheridan.com/assets/graphics/og.png",
+                "width": 1200,
+                "height": 630
+            }
+        </script>
     </body>
 </html>
