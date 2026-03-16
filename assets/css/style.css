@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Font';
+    src: url('/assets/type/monaspacexenon_regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary: #423B77;
+    --progress: #B3B2B2;
+    --background: #E8EBE8;
+    --width: 72ch;
+    --flow: calc(4rem + 2vw);
+}
+
+@media(prefers-color-scheme:dark) {
+    :root {
+        --primary: #E8EBE8;
+        --progress: #8D8C8C;
+        --background: #1F1C30;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background: none;
+}
+
+html {
+    font-size: 16px;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 2rem 1.25rem;
+    font-family: 'Font', serif;
+    font-size: calc(1rem + .25vw);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--primary);
+    background-color: var(--background);
+}
+
+header, 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5em;
+    width: 100%;
+}
+
+.site-title {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+main {
+    flex: 1;
+    padding: var(--flow) 0;
+}
+
+ul {
+    list-style: none;
+    max-width: var(--width);
+}
+
+h2 ~ h2 {
+    margin-block-start: var(--flow);
+}
+
+h2 + * {
+    margin-block-start: calc(var(--flow) / 2.5);
+}
+
+
+li + li {
+    margin-block-start: 1rem;
+}
+
+hr {
+    flex: 1;
+    margin-top: 6px;
+    border-top: 2px dotted var(--primary);
+    background-color: transparent;
+}
+
+.arrow-up-right {
+    width: 1em;
+    height: auto;
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 12;
+    vertical-align: text-bottom;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--primary);
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: all;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    a:hover {
+        opacity: .7;
+        transition: opacity 0.2s ease;
+    }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+}
+
+.audio-player {
+    min-width: 0;
+    max-width: 56ch;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-block-start: 1rem;
+}
+
+.play-pause {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: .5rem;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.play-pause .icon {
+    width: 72.5%;
+    height: 72.5%
+}
+
+.play-pause.play .icon polygon,
+.play-pause.pause .icon rect {
+    fill: var(--background);
+}
+
+.progress {
+    flex: 1;
+    position: relative;
+    height: 2px;
+    background-color: var(--progress);
+    cursor: pointer;
+}
+
+.progress-filled {
+    width: 0;
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.progress input {
+    position: absolute;
+    top: -.45rem;
+    width: 100%;
+    height: 16px;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: auto;
+}
+
+.progress input::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--primary);
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.progress input::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--primary);
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
