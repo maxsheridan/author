@@ -44,7 +44,7 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     padding: 2rem 1.25rem;
-    font-family: 'Font', serif;
+    font-family: 'Font', Courier, monospace;
     font-size: calc(1rem + .25vw);
     font-weight: 400;
     line-height: 1.6;
