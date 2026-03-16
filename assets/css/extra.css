@@ -2,6 +2,12 @@
     vertical-align: text-bottom;
 }
 
+.with-link {
+    display: inline-flex;
+    flex-wrap: wrap;      
+    gap: .3rem; 
+}
+
 a {
     display: inline-block;
     color: var(--primary);
@@ -27,8 +33,6 @@ input:focus-visible {
 }
 
 .blink {
-    display: inline-block;
-    margin-left: .5rem;
     animation: blink 1s step-start infinite;
 }
 
