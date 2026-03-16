@@ -1,9 +1,4 @@
 .arrow-up-right {
-    width: 1em;
-    height: auto;
-    fill: none;
-    stroke: var(--primary);
-    stroke-width: 12;
     vertical-align: text-bottom;
 }
 
