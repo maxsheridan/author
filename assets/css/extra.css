@@ -4,8 +4,11 @@
 
 .with-link {
     display: inline-flex;
-    flex-wrap: wrap;      
-    gap: .3rem; 
+    flex-wrap: wrap;   
+}
+
+.with-link > :last-child {
+    margin-left: .5rem;
 }
 
 a {
