@@ -198,7 +198,7 @@ img {
 }
 
 .short p {
-    padding-right: 4rem;
+    max-width: 52ch;
 }
 
 .small-text {
