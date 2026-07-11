@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <script xmlns="http://www.w3.org/1999/xhtml" src="assets/js/rss-beautifier.js" defer="" />
     <channel>
         <title>RSS Updates from Max Sheridan</title>
         <link>https://maxsheridan.com/rss-updates</link>

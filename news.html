@@ -9,6 +9,7 @@
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161718">
         <link rel="preload" href="/assets/type/hexfranklinnarrow_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <style>.subscribe{width:max-content;max-width:100%; text-transform:inherit;text-decoration:underline;text-decoration-thickness:2px;text-decoration-color:rgb(var(--accent));text-underline-offset:2px;text-decoration-skip-ink:all;;word-break:break-all;cursor:pointer;transition:background .2s ease;}@media(hover:hover) and (pointer:fine){.subscribe:hover{opacity:.6}}</style>
         <link rel="stylesheet" href="/assets/css/shared.min.css?v=3">
         <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon" sizes="48x48" >
         <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml" sizes="any">
@@ -108,8 +109,14 @@
                 </article>
                 <h2>RSS</h2>
                 <p>
-                    <a href="/news.xml">Get RSS updates.</a>
+                    To subscribe to my feed, copy the URL below and paste it into your reader.
                 </p>
+                <button class="subscribe"
+                    onclick="copyToClipboard(this)"
+                    type="button"
+                    aria-label="Copy RSS feed URL to clipboard">
+                    maxsheridan.com/news.xml
+            </button>
             </div>
         </main>
         <footer class="linkstyling-off" aria-label="Footer">
@@ -123,6 +130,7 @@
                 <li class="inline-hr big-screen" aria-hidden="true"></li>
             </ul>
         </footer>
+        <script>function copyToClipboard(element){const text=element.textContent;navigator.clipboard.writeText(text).then(()=>{const originalText=element.textContent;const originalColor=element.style.color;const originalDecoration=element.style.textDecoration;element.textContent="Copied!";element.style.color="rgb(var(--primary))";element.style.textDecoration="none";setTimeout(()=>{element.textContent=originalText;element.style.color=originalColor;element.style.textDecoration=originalDecoration},2000)}).catch(err=>{console.error('Failed to copy:',err)})}</script>
         <script src="/assets/js/copy_email.js" defer></script>
     </body>
 </html>
