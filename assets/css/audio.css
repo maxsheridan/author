@@ -1,0 +1,85 @@
+.audio-player {
+    min-width: 0;
+    max-width: 56ch;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-block-start: 1rem;
+}
+
+.play-pause {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: .5rem;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(var(--primary));
+    cursor: pointer;
+}
+
+.play-pause .icon {
+    width: 72.5%;
+    height: 72.5%
+}
+
+.play-pause.play .icon polygon,
+.play-pause.pause .icon rect {
+    fill:  rgb(var(--background));
+}
+
+.progress {
+    flex: 1;
+    position: relative;
+    height: 2px;
+    background-color: rgb(var(--accent));
+    cursor: pointer;
+}
+
+.progress-filled {
+    width: 0;
+    height: 100%;
+    background-color: rgb(var(--primary));
+}
+
+.progress input {
+    position: absolute;
+    top: -.45rem;
+    width: 100%;
+    height: 16px;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: auto;
+}
+
+.progress input::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(var(--primary));
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.progress input::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(var(--primary));
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}

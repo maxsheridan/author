@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="light dark">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#EAE9E6">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161718">
+        <link rel="preload" href="/assets/type/hexfranklinnarrow_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <style>.site-generator div>*+*{margin-block-start:var(--space-1)}:root{--special-background:#D3CEC1;}@media (prefers-color-scheme:dark){:root{--special-background:#242424}}.buttons{margin-block-end:var(--space-0)}.site-generator button{margin-inline-end:.5rem;padding:.75rem 1.5rem;border:none;border-radius:.25rem;font-size:calc(var(--paragraph) * .75);color:rgb(var(--background));background:rgb(var(--primary));cursor:pointer;}button:disabled{opacity:.5;cursor:not-allowed;}.output,.controls{font-size:calc(var(--paragraph) * .75);}.stats{padding:1rem;border-radius:.25rem;color:var(--primary);background:var(--special-background);}#sitemapOutput{max-height:600px;overflow-x:auto;padding:1rem;border-radius:.25rem;color:var(--primary);background:var(--special-background);}#fileList{max-height:300px;overflow-y:auto;padding:1rem;border-radius:.25rem;color:var(--primary);background:var(--special-background);}#fileList label{display:block;padding:.25rem 0;cursor:pointer}#fileList input[type=checkbox]{accent-color:rgb(var(--highlight));}.controls{display:flex;flex-wrap:wrap;gap:.75rem;align-items:flex-end;margin:1rem 0;}.controls label{display:flex;flex-direction:column;gap:.25rem;}.controls input[type=text]{min-width:280px;padding:.5rem;border-radius:.25rem;border:1px solid rgb(var(--primary));color:rgb(var(--primary));}#folderInput{display:none;}</style>
+        <link rel="stylesheet" href="/assets/css/shared.min.css?v=3">
+        <title>Sitemap Generator</title>
+    </head>
+    <body class="site-generator">
+        <div>
+            <h1>Sitemap Generator</h1>
+            <p>Generate a sitemap.xml file from HTML files in a project directory.</p>
+        </div>
+        <div class="controls">
+            <label>
+                Base URL
+                <input type="text" id="baseUrl" placeholder="https://maxsheridan.com" value="https://maxsheridan.com">
+            </label>
+        </div>
+        <div class="buttons">
+            <input type="file" id="folderInput" multiple onchange="handleFolderSelect(event)">
+            <button onclick="document.getElementById('folderInput').click()">Select Project Folder</button>
+            <button onclick="generateSitemap()" id="generateBtn" disabled>Generate Sitemap</button>
+            <button class="download-btn" onclick="downloadSitemap()" id="downloadBtn" style="display:none;">Download sitemap.xml</button>
+        </div>
+        <div class="output">
+            <div id="fileList" style="display:none;"></div>
+            <div id="stats" class="stats" style="display:none;"></div>
+            <pre id="sitemapOutput"></pre>
+        </div>
+        <script>
+            let generatedSitemap = '';
+            let discoveredFiles = []; // { path, title }
+        
+            // Folders to skip when building the sitemap
+            const SKIP_DIR_SEGMENTS = new Set(['.git', 'node_modules', 'assets', '.vscode', '.idea']);
+        
+            // Files that should start unchecked by default (still toggleable by the user)
+            const AUTO_EXCLUDE_FILES = new Set(['sitemap-generator.html', '404.html']);
+        
+            document.getElementById('folderInput').webkitdirectory = true;
+        
+            async function handleFolderSelect(event) {
+                const files = Array.from(event.target.files).filter(f => f.name.toLowerCase().endsWith('.html'));
+        
+                // webkitRelativePath looks like "my-site/index.html" or "my-site/blog/post.html"
+                // Strip the top-level folder name so paths are relative to the site root.
+                const withRelPaths = files.map(f => {
+                    const parts = f.webkitRelativePath.split('/');
+                    parts.shift(); // drop the root folder name itself
+                    return { file: f, relPath: parts.join('/') };
+                }).filter(({ relPath }) => {
+                    const segments = relPath.split('/');
+                    return !segments.some(seg => SKIP_DIR_SEGMENTS.has(seg) || seg.startsWith('.'));
+                });
+        
+                discoveredFiles = [];
+                for (const { file, relPath } of withRelPaths) {
+                    let title = '';
+                    try {
+                        const text = await file.text();
+                        const match = text.match(/<title[^>]*>([^<]*)<\/title>/i);
+                        title = match ? match[1].trim() : '';
+                    } catch (e) {
+                        // If a file can't be read, still list it without a title
+                    }
+                    discoveredFiles.push({ path: relPath, title });
+                }
+        
+                discoveredFiles.sort((a, b) => a.path.localeCompare(b.path));
+                renderFileList();
+                document.getElementById('generateBtn').disabled = discoveredFiles.length === 0;
+            }
+        
+            function renderFileList() {
+                const container = document.getElementById('fileList');
+        
+                if (discoveredFiles.length === 0) {
+                    container.style.display = 'block';
+                    container.innerHTML = '<em>No .html files found in that folder.</em>';
+                    return;
+                }
+        
+                container.style.display = 'block';
+                container.innerHTML = discoveredFiles.map((f, i) => {
+                    const fileName = f.path.split('/').pop();
+                    const isAutoExcluded = AUTO_EXCLUDE_FILES.has(fileName);
+                    const label = f.title ? `${f.path} &mdash; <em>${escapeHtml(f.title)}</em>` : f.path;
+                    return `<label><input type="checkbox" data-index="${i}" ${isAutoExcluded ? '' : 'checked'}> ${label}</label>`;
+                }).join('');
+            }
+        
+            function escapeHtml(str) {
+                const div = document.createElement('div');
+                div.textContent = str;
+                return div.innerHTML;
+            }
+        
+            function getCheckedFiles() {
+                const checkboxes = document.querySelectorAll('#fileList input[type=checkbox]');
+                const checked = [];
+                checkboxes.forEach(cb => {
+                    if (cb.checked) checked.push(discoveredFiles[parseInt(cb.dataset.index, 10)]);
+                });
+                return checked;
+            }
+        
+            function priorityFor(path) {
+                if (path === 'index.html') return { priority: '1.0', changefreq: 'weekly' };
+                if (path.split('/').length > 1) return { priority: '0.6', changefreq: 'monthly' };
+                return { priority: '0.8', changefreq: 'weekly' };
+            }
+        
+            function generateSitemap() {
+                const output = document.getElementById('sitemapOutput');
+                const stats = document.getElementById('stats');
+                const downloadBtn = document.getElementById('downloadBtn');
+        
+                const files = getCheckedFiles();
+                if (files.length === 0) {
+                    output.textContent = 'No files selected. Check at least one .html file above.';
+                    stats.style.display = 'none';
+                    return;
+                }
+        
+                let baseUrl = document.getElementById('baseUrl').value.trim().replace(/\/$/, '');
+        
+                const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+        
+                let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+                sitemap += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+        
+                files.forEach(f => {
+                    // Treat index.html at the root as the homepage ("/")
+                    const urlPath = f.path === 'index.html' ? '/' : `/${f.path.replace(/\.html$/i, '')}`;
+                    const { priority, changefreq } = priorityFor(f.path);
+        
+                    sitemap += `  <url>\n`;
+                    sitemap += `    <loc>${baseUrl}${urlPath}</loc>\n`;
+                    sitemap += `    <lastmod>${today}</lastmod>\n`;
+                    sitemap += `    <changefreq>${changefreq}</changefreq>\n`;
+                    sitemap += `    <priority>${priority}</priority>\n`;
+                    sitemap += `  </url>\n`;
+                });
+        
+                sitemap += `</urlset>`;
+        
+                generatedSitemap = sitemap;
+                output.textContent = sitemap;
+        
+                stats.style.display = 'block';
+                stats.innerHTML = `
+                    <strong>Sitemap Generated Successfully!</strong><br>
+                    Total URLs: ${files.length}<br>
+                    Generated: ${new Date().toLocaleString()}
+                `;
+        
+                downloadBtn.style.display = 'inline-block';
+            }
+        
+            function downloadSitemap() {
+                if (!generatedSitemap) {
+                    alert('Please generate the sitemap first!');
+                    return;
+                }
+        
+                const blob = new Blob([generatedSitemap], { type: 'application/xml' });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'sitemap.xml';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+            }
+        </script>
+    </body>
+</html>

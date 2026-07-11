@@ -1,0 +1,47 @@
+!!These items have been culled.
+
+<article>
+    <h2 class="vh">Reading at Prozak</h2>
+    <p class="news-item">
+        <span class="highlight with-gap">18 April 2023</span>
+        <span>
+            I’ll be back at Prozak Kafeneion on April 29 at 8PM reading some new flash fiction.
+        </span>
+    </p>
+</article>
+<article>
+    <h2 class="vh">Boomerangs</h2>
+    <p class="news-item">
+        <span class="highlight with-gap">01 Mar 2023</span>
+        <span>
+            A rip-roaring tale of show rats and traveling cocktail salesmen. <a href="https://nudebrucereview.files.wordpress.com/2023/02/nbr-issue-13-.pdf">Read Boomerangs in Nude Bruce Review #13.</a>
+        </span>
+    </p>
+</article>
+<article>
+    <h2 class="vh">Reading at Prozak</h2>
+    <p class="news-item">
+        <span class="highlight with-gap">01 Feb 2023</span>
+        <span>
+            Reading at Prozak Kafeneion for Open Mic Night Unmasked on March 4 at 8PM.
+        </span>
+    </p>
+</article>
+<article>
+    <h2 class="vh">I Got a Social Worker</h2>
+    <p class="news-item">
+        <span class="highlight with-gap">18 Jan 2023</span>
+        <span>
+            New pandemic-era flash in <a href="https://midlvlmag.com/max-sheridan-sw/">Mid-Level Management Magazine Issue 3.</a>
+        </span>
+    </p>
+</article>
+<article>
+    <h2 class="vh">A Penis Boot</h2>
+    <p class="news-item">
+        <span class="highlight with-gap">03 Jan 2023</span>
+        <span>
+            Poet warrior Narting Tadoo explores the loss of his best friend’s feet to Big Nar Nar the leper in <a href="https://letsstabcaesar.bigcartel.com/product/volume-iii-print-edition">Let’s Stab Caesar! Volume III, the Feral Edition.</a>
+        </span>
+    </p>
+</article>

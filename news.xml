@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <script xmlns="http://www.w3.org/1999/xhtml" src="assets/js/rss-beautifier.js" defer="" />
+    <channel>
+        <title>RSS Updates from Max Sheridan</title>
+        <link>https://maxsheridan.com/rss-updates</link>
+        <description>Brief updates about new stories and books and (rarer) news about when and where I'm teaching or reading</description>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 23 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <atom:link href="https://maxsheridan.com/news.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Mouse Died Today</title>
+            <link>https://maxsheridan.com/rss-updates#mouse-died-today</link>
+            <guid isPermaLink="false">Update#10</guid>
+            <pubDate>Mon, 05 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Read my new short story Mouse Died Today in my favorite humor zine, Johnny America!]]></description>
+        </item>
+        
+        <item>
+            <title>Embrace the Depravity</title>
+            <link>https://maxsheridan.com/rss-updates#embrace-the-depravity</link>
+            <guid isPermaLink="false">Update#09</guid>
+            <pubDate>Sat, 05 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[My latest flash in out in Two-Headed Zine’s creepy third volume Embrace the Depravity.]]></description>
+        </item>
+        
+        <item>
+            <title>Bobby Two Winds</title>
+            <link>https://maxsheridan.com/rss-updates#bobby-two-winds</link>
+            <guid isPermaLink="false">Update#08</guid>
+            <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[A Two-Spirit janitor finds brotherly love and syphilis at a logging camp. Read Bobby Two Winds in Pulp Queer Westerns.]]></description>
+        </item>
+        
+        <item>
+            <title>Barry Denver Stole My Wife</title>
+            <link>https://maxsheridan.com/rss-updates#barry-denver-stole-my-wife</link>
+            <guid isPermaLink="false">Update#07</guid>
+            <pubDate>Mon, 21 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[New short story at Bridge Eight Literary today!]]></description>
+        </item>
+        
+        <item>
+            <title>God’s Speedboat</title>
+            <link>https://maxsheridan.com/rss-updates#gods-speedboat</link>
+            <guid isPermaLink="false">Update#06</guid>
+            <pubDate>Thu, 07 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[My new novel from Outcast Press is out.]]></description>
+        </item>
+        
+    </channel>
+</rss>
