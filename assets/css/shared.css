@@ -221,6 +221,11 @@ footer ul {
     text-transform: uppercase;
 }
 
+.non-clickable {
+    cursor: default;
+    user-select: none;
+}
+
 hr, 
 .inline-hr {
     flex: 1;
