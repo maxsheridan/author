@@ -161,8 +161,15 @@ li {
 
 .text {
     flex: 1 1 50%;
-    max-width: 56ch;
+    max-width: 46rem;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
+
+.text-inner {
+    max-width: 56ch;
+    margin-inline: auto;
+} 
 
 .blurb-block.not-feature::after {
     content: "";
