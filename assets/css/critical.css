@@ -1,28 +1,4 @@
 /* AUTO-SYNCED FROM shared.css — DO NOT EDIT BELOW — START */
-@font-face {
-    font-family: 'Hex Franklin Narrow';
-    src: url(/assets/type/hexfranklinnarrow_regular.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Big Shoulders';
-    src: url(/assets/type/bigshoulders_variable.woff2) format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Big Shoulders 36';
-    src: url(/assets/type/bigshoulders_36pt_bold.woff2) format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
     --ratio: 1.6;
     --space--2: calc(var(--space--1) / var(--ratio));

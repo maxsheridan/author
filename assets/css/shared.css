@@ -1,4 +1,3 @@
-/* @critical-sync:start */
 @font-face {
     font-family: 'Hex Franklin Narrow';
     src: url(/assets/type/hexfranklinnarrow_regular.woff2) format('woff2');
@@ -23,6 +22,7 @@
     font-display: swap;
 }
 
+/* @critical-sync:start */
 :root {
     --ratio: 1.6;
     --space--2: calc(var(--space--1) / var(--ratio));
