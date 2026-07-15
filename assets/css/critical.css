@@ -137,7 +137,7 @@ li {
 
 .text {
     flex: 1 1 50%;
-    max-width: 48rem;
+    max-width: 47rem;
     min-width: 0;
     overflow-wrap: anywhere;
 }
