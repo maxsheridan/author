@@ -21,6 +21,8 @@ fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-python3 "$SCRIPT_DIR/assets/py/sync_critical_css.py" "$SHARED_CSS" "$CRITICAL_CSS"
+# The shared-to-critical sync step is currently disabled.
+# Uncomment the line below to restore syncing from shared.css into critical.css.
+# python3 "$SCRIPT_DIR/assets/py/sync_critical_css.py" "$SHARED_CSS" "$CRITICAL_CSS"
 python3 "$SCRIPT_DIR/assets/py/minify_shared_css.py" "$SHARED_CSS" "$MIN_CSS"
 python3 "$SCRIPT_DIR/assets/py/inline_critical_css.py" "$CRITICAL_CSS" "$INDEX_HTML"

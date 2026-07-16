@@ -31,7 +31,6 @@
     font-display: swap;
 }
 
-/* @critical-sync:start */
 :root {
     --ratio: 1.6;
     --space--2: calc(var(--space--1) / var(--ratio));
@@ -152,7 +151,6 @@ p,
 li {
     max-width: 56ch;
 }
-/* @critical-sync:end */
 
 p.news-item {
     max-width: 58ch;
