@@ -54,6 +54,7 @@ html:focus-within {
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
     min-height: 100dvh;
     padding: var(--space-2) 1.25rem;
@@ -122,45 +123,25 @@ li {
 
 .blurb-block {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
     column-gap: var(--space-3);
     width: 100%;
-    max-width: calc(1400px + 4vw);
+    max-width: calc(1440px + 4vw);
     margin: 0 auto;
 }
 
-.book {
-    flex: 0 1 calc(300px + 4vw);
-}
-
-.text {
-    flex: 1 1 50%;
-    max-width: 47rem;
-    min-width: 0;
-    overflow-wrap: anywhere;
-}
-
-.text-inner {
-    max-width: 56ch;
-    margin-inline: auto;
-} 
-
-.blurb-block.not-feature::after {
-    content: "";
-    flex: 0 1 calc(300px + 4vw);
-    height: 0;
-    aspect-ratio: 450 / 728;
+@media (max-width:940px) {
+    .blurb-block {
+        flex-direction: column;
+    }
 }
 
 .book img {
-    aspect-ratio: 450 / 728;
-}
-
-img {
     width: 100%;
+    max-width: calc(300px + 4vw);
     height: auto;
+    aspect-ratio: 450 / 728;
 }
 
 .blurb-block.feature {
@@ -204,6 +185,8 @@ img {
     gap: var(--space--1);
     margin-block-start: var(--space-3);
     margin-block-end: var(--space-3);
+    margin-inline-start: calc(50% - 50vw + 1.25rem);
+    margin-inline-end: calc(50% - 50vw + 1.25rem);
 }
 
 svg.skull {

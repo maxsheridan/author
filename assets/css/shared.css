@@ -78,6 +78,7 @@ html:focus-within {
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
     min-height: 100dvh;
     padding: var(--space-2) 1.25rem;
@@ -207,6 +208,10 @@ button:focus-visible,
 
 [tabindex="-1"]:focus {
     outline: none;
+}
+
+footer {
+    width: 100%;
 }
 
 footer ul {
