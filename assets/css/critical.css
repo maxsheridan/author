@@ -14,16 +14,21 @@
     }
 }
 
+.book {
+    flex: 0 0 auto;
+    max-width: calc(300px + 4vw);
+}
+
 .book img {
     width: 100%;
-    max-width: calc(300px + 4vw);
     height: auto;
     aspect-ratio: 450 / 728;
 }
 
 .text {
     flex: 1 1 0;
-    max-width: 56ch;
+    min-width: 0;
+    max-width: 57ex;
 }
 
 .blurb-block.feature {

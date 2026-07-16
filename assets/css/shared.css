@@ -149,11 +149,11 @@ main {
 
 p, 
 li {
-    max-width: 56ch;
+    max-width: 57ex;
 }
 
 p.news-item {
-    max-width: 58ch;
+    max-width: 58ex;
 }
 
 .news-item .with-gap {
