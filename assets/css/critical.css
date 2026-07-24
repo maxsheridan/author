@@ -15,8 +15,7 @@
 }
 
 .book {
-    flex: 0 0 auto;
-    max-width: calc(300px + 4vw);
+    flex: 0 1 calc(300px + 4vw);
 }
 
 .book img {
@@ -26,7 +25,7 @@
 }
 
 .text {
-    flex: 1 1 0;
+    flex: 1 1 50%;
     min-width: 0;
     max-width: 57ex;
 }
@@ -49,7 +48,7 @@
 }
 
 .short p {
-    max-width: 52ch;
+    max-width: 52ex;
 }
 
 .small-text {
