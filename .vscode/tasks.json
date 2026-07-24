@@ -1,21 +1,21 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-      {
-      "label": "Sync CSS",
-      "type": "shell",
-      "command": "./run_css.sh",
-      "args": [
-          "assets/css/shared.css",
-          "assets/css/critical.css",
-          "assets/css/shared.min.css",
-          "index.html"
-      ],
-      "problemMatcher": [],
-      "presentation": {
-          "reveal": "always",
-          "panel": "shared"
-      }
-      }
-  ]
-  }
+    "version": "2.0.0",
+    "tasks": [
+        {
+        "label": "Sync CSS",
+        "type": "shell",
+        "command": "./run_css.sh",
+        "args": [
+            "assets/css/shared.css",
+            "assets/css/critical.css",
+            "assets/css/shared.min.css",
+            "index.html"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+            "reveal": "always",
+            "panel": "shared"
+        }
+        }
+    ]
+}
