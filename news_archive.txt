@@ -1,47 +1,48 @@
 !!These items have been culled.
 
-<article>
-    <h2 class="vh">Reading at Prozak</h2>
-    <p class="news-item">
-        <span class="highlight with-gap">18 April 2023</span>
+<ol>
+    <li class="news-item">
         <span>
-            I’ll be back at Prozak Kafeneion on April 29 at 8PM reading some new flash fiction.
+            <span class="with-gap">18 Apr 2023</span>
+            <span>
+                I’ll be back at Prozak Kafeneion on April 29 at 8PM reading some new flash fiction.
+            </span>
         </span>
-    </p>
-</article>
-<article>
-    <h2 class="vh">Boomerangs</h2>
-    <p class="news-item">
-        <span class="highlight with-gap">01 Mar 2023</span>
+    </li>
+
+    <li class="news-item">
         <span>
-            A rip-roaring tale of show rats and traveling cocktail salesmen. <a href="https://nudebrucereview.files.wordpress.com/2023/02/nbr-issue-13-.pdf">Read Boomerangs in Nude Bruce Review #13.</a>
+            <span class="with-gap">01 Mar 2023</span>
+            <span>
+                <a href="https://nudebrucereview.files.wordpress.com/2023/02/nbr-issue-13-.pdf">Read Boomerangs in Nude Bruce Review #13.</a> A rip-roaring tale of show rats and traveling cocktail salesmen.
+            </span>
         </span>
-    </p>
-</article>
-<article>
-    <h2 class="vh">Reading at Prozak</h2>
-    <p class="news-item">
-        <span class="highlight with-gap">01 Feb 2023</span>
+    </li>
+
+    <li class="news-item">
         <span>
-            Reading at Prozak Kafeneion for Open Mic Night Unmasked on March 4 at 8PM.
+            <span class="with-gap">01 Feb 2023</span>
+            <span>
+                Reading at Prozak Kafeneion for Open Mic Night Unmasked on March 4 at 8PM.
+            </span>
         </span>
-    </p>
-</article>
-<article>
-    <h2 class="vh">I Got a Social Worker</h2>
-    <p class="news-item">
-        <span class="highlight with-gap">18 Jan 2023</span>
+    </li>
+
+    <li class="news-item">
         <span>
-            New pandemic-era flash in <a href="https://midlvlmag.com/max-sheridan-sw/">Mid-Level Management Magazine Issue 3.</a>
+            <span class="with-gap">18 Jan 2023</span>
+            <span>
+                New pandemic-era flash in <a href="https://midlvlmag.com/max-sheridan-sw/">Mid-Level Management Magazine Issue 3.</a>
+            </span>
         </span>
-    </p>
-</article>
-<article>
-    <h2 class="vh">A Penis Boot</h2>
-    <p class="news-item">
-        <span class="highlight with-gap">03 Jan 2023</span>
+    </li>
+
+    <li class="news-item">
         <span>
-            Poet warrior Narting Tadoo explores the loss of his best friend’s feet to Big Nar Nar the leper in <a href="https://letsstabcaesar.bigcartel.com/product/volume-iii-print-edition">Let’s Stab Caesar! Volume III, the Feral Edition.</a>
+            <span class="with-gap">03 Jan 2023</span>
+            <span>
+                Poet warrior Narting Tadoo explores the loss of his best friend’s feet to Big Nar Nar the leper in <a href="https://letsstabcaesar.bigcartel.com/product/volume-iii-print-edition">Let’s Stab Caesar! Volume III, the Feral Edition.</a>
+            </span>
         </span>
-    </p>
-</article>
+    </li>
+</ol>

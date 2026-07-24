@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'Fallback';
     src: local(Arial);
-    size-adjust: 100%;
+    size-adjust: 108%;
     ascent-override: normal;
     descent-override: normal;
     line-gap-override: normal;
@@ -152,12 +152,8 @@ li {
     max-width: 57ex;
 }
 
-p.news-item {
-    max-width: 58ex;
-}
-
 .news-item .with-gap {
-    margin-inline-end: var(--space--1);
+    margin-inline-end: var(--space-0);
 }
 
 .highlight {

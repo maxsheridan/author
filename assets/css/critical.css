@@ -14,6 +14,10 @@
     }
 }
 
+.blurb-block.feature {
+    row-gap: var(--space-1);
+}
+
 .book {
     flex: 0 1 calc(300px + 4vw);
 }
@@ -30,8 +34,8 @@
     max-width: 57ex;
 }
 
-.blurb-block.feature {
-    row-gap: var(--space-1);
+.blurb p {
+    max-width: 57ex;
 }
 
 .blurb:not(.headline),
