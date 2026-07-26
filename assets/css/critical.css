@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: var(--space-2) 1.25rem;
+    font-family: var(--body);
+    font-size: var(--paragraph);
+    font-style: normal;
+    line-height: 1.5;
+    color: rgb(var(--primary));
+    background-color: rgb(var(--background));
+}
+
+main {
+    width: 100%;
+    padding: var(--space-3)  0;
+}
+
+.blurb-block {
+    display: grid;
+    grid-template-columns: calc(300px + 4vw) minmax(0, 57ex);
+    justify-content: center;
+    column-gap: var(--space-3);
+    align-items: center;
+    width: 100%;
+    max-width: calc(1440px + 4vw);
+    margin: 0 auto;
+}
+
+.blurb-block.feature {
+    row-gap: var(--space-1);
+}
+
+.book {
+    grid-column: 1;
+    max-width: calc(300px + 4vw);
+}
+
+.text {
+    grid-column: 2;
+    min-width: 0;
+}
+
+.blurb-block:not(.feature) .text {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 940px) {
+    .blurb-block {
+        grid-template-columns: 1fr;
+    }
+
+    .book,
+    .text {
+        grid-column: 1;
+    }
+
+    .book {
+        justify-self: center;
+    }
+
+    .text {
+        max-width: 57ex;
+        justify-self: center;
+    }
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 450 / 728;
+}
+
+.blurb p {
+    max-width: 57ex;
+}
+
+.blurb:not(.headline),
+.short .blurb + .blurb {
+    margin-block-start: var(--space-2);
+}
+
+.headline {
+    margin-block-start: var(--space-1);
+}
+
+.blurb > * + * {
+    margin-block-start: var(--space-0);
+}
+
+.short p {
+    max-width: 52ex;
+}
+
+.small-text {
+    font-family: var(--display);
+    font-size: calc(var(--paragraph) * .875);
+    text-transform: uppercase;
+}
+
+.info .small-text {
+    margin-block-start: 3rem;
+    font-family: var(--body);
+    font-size: calc(var(--paragraph) * .9);
+    text-transform: none;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space--1);
+    margin-block-start: var(--space-3);
+    margin-block-end: var(--space-3);
+    margin-inline-start: calc(50% - 50vw + 1.25rem);
+    margin-inline-end: calc(50% - 50vw + 1.25rem);
+}
+
+svg.skull {
+    width: 1.5em;
+    height: auto;
+}
