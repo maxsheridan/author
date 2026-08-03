@@ -8,20 +8,12 @@
 
 @font-face {
     font-family: 'Fallback';
-    src: local(Arial);
-    size-adjust: 108%;
+    src: local(Impact);
+    size-adjust: 105%;
 }
 
 @font-face {
     font-family: 'Big Shoulders';
-    src: url(/assets/type/bigshoulders_variable.woff2) format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Big Shoulders 36';
     src: url(/assets/type/bigshoulders_36pt_bold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
@@ -36,19 +28,13 @@
     --space-1: calc(var(--space-0) * var(--ratio));
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-3: calc(var(--space-2) * var(--ratio));
-    --body: 'Hex Franklin Narrow', 'Fallback', system-ui, sans-serif;
-    --display: 'Big Shoulders 36', system-ui, sans-serif;
+    --body: 'Hex Franklin Narrow', 'Fallback', 'Arial Narrow', 'Liberation Sans Narrow', sans-serif;
+    --display: 'Big Shoulders', sans-serif;
     --paragraph: calc(1.1rem + .4vw);
     --primary: 22,  23,  24;
     --highlight: 0,  0,  255;
     --accent: 141,  140,  140;
     --background: 234, 233, 230;
-}
-
-@supports (font-variation-settings: normal) {
-    :root {
-        --display: 'Big Shoulders', system-ui, sans-serif;
-    }
 }
 
 @media (prefers-color-scheme:dark) {
