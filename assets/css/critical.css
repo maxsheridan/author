@@ -130,7 +130,7 @@ main {
 
 .blurb-block {
     display: grid;
-    grid-template-columns: calc(300px + 4vw) minmax(0, 56ch);
+    grid-template-columns: calc(300px + 4vw) minmax(0, 32em);
     justify-content: center;
     column-gap: var(--space-3);
     align-items: center;
@@ -146,6 +146,13 @@ main {
 .book {
     grid-column: 1;
     max-width: calc(300px + 4vw);
+    aspect-ratio: 450 / 728;
+}
+
+.book img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .text {
@@ -169,19 +176,13 @@ main {
         justify-self: center
     }
     .text {
-        max-width: 56ch;
+        max-width: 32em;
         justify-self: center
     }
 }
 
-.book img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 450 / 728;
-}
-
 .blurb p {
-    max-width: 56ch;
+    max-width: 32em;
 }
 
 .blurb:not(.headline),
@@ -198,7 +199,7 @@ main {
 }
 
 .short p {
-    max-width: 52ch;
+    max-width: 24em;
 }
 
 .small-text {

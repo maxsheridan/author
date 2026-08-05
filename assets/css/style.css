@@ -128,7 +128,7 @@ h2 ~ h2 {
 
 p, 
 li {
-    max-width: 57ex;
+    max-width: 32em;
 }
 
 li {
