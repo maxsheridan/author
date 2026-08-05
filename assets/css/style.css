@@ -30,7 +30,7 @@
     --space-3: calc(var(--space-2) * var(--ratio));
     --body: 'Hex Franklin Narrow', 'Fallback', sans-serif;
     --display: 'Big Shoulders', sans-serif;
-    --paragraph: calc(1.125rem + .35vw);
+    --paragraph: calc(1.1rem + .4vw);
     --primary: 22,  23,  24;
     --highlight: 0,  0,  255;
     --accent: 141,  140,  140;
