@@ -34,7 +34,7 @@
     --primary: 22, 23, 24;
     --highlight: 0, 0, 255;
     --accent: 141, 140, 140;
-    --background: 234, 233, 230;
+    --background: 234, 233, 228;
 }
 
 @media (prefers-color-scheme:dark) {
