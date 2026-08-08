@@ -25,4 +25,5 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Uncomment the line below to restore syncing from style.css into critical.css.
 # python3 "$SCRIPT_DIR/assets/py/sync_critical_css.py" "$STYLE_CSS" "$CRITICAL_CSS"
 python3 "$SCRIPT_DIR/assets/py/minify_style_css.py" "$STYLE_CSS" "$STYLE_MIN_CSS"
+python3 "$SCRIPT_DIR/assets/py/sync_extra_min_css.py" "$STYLE_MIN_CSS" "$SCRIPT_DIR/assets/css/extra_min.css"
 python3 "$SCRIPT_DIR/assets/py/inline_critical_css.py" "$CRITICAL_CSS" "$INDEX_HTML"

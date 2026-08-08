@@ -176,12 +176,9 @@ button,
     }
 }
 
-a:focus-visible,
-button:focus-visible,
-[role="button"]:focus-visible {
+*:focus-visible {
     outline: 3px solid rgb(var(--highlight));
     outline-offset: 3px;
-    border-radius: .25rem;
 }
 
 [tabindex="-1"]:focus {
