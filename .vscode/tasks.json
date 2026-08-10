@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+        "label": "Sync CSS",
+        "type": "shell",
+        "command": "./run_css.sh",
+        "args": [
+            "assets/css/style.css",
+            "assets/css/critical.css",
+            "assets/css/style_min.css",
+            "index.html"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+            "reveal": "always",
+            "panel": "shared"
+        }
+        }
+    ]
+}

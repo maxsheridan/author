@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="light dark">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#EAE9E4">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161718">
+        <link rel="preload" href="/assets/graphics/max.webp" as="image" type="image/webp" fetchpriority="high">
+        <link rel="preload" href="/assets/type/hexfranklinnarrow_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="/assets/type/bigshoulders_36pt_bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/style_min.css?v=1.0">
+        <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=1.0" type="image/png">
+        <link rel="icon" href="/assets/icons/fallback_icon_180.png?v=1.0" type="image/png">
+        <link rel="icon" href="/favicon.ico?v=1.0" type="image/x-icon" sizes="48x48">
+        <link rel="icon" href="/favicon.svg?v=1.0" type="image/svg+xml" sizes="any">
+        <link rel="manifest" href="/manifest.json" type="application/json">
+        <link rel="canonical" href="https://maxsheridan.com/about">
+        <title>About — Max Sheridan</title>
+        <meta name="description" content="Max Sheridan is the author of the novels Dillo and God’s Speedboat and many short stories. From 2015 to 2020, he ran the community creative writing center Write CY in Nicosia, Cyprus, where he also taught short fiction. He lives in Europe with his family.">
+        <meta property="og:site_name" content="Max Sheridan">
+        <meta property="og:title" content="About">
+        <meta property="og:description" content="Max Sheridan is the author of the novels Dillo and God’s Speedboat and many short stories. From 2015 to 2020, he ran the community creative writing center Write CY in Nicosia, Cyprus, where he also taught short fiction. He lives in Europe with his family.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://maxsheridan.com/about">
+        <meta property="og:image" content="https://maxsheridan.com/assets/graphics/max_og.webp">
+        <meta property="og:image:type" content="image/webp">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://maxsheridan.com/assets/graphics/max_og.webp">
+        <meta name="twitter:title" content="Max Sheridan">
+        <meta name="twitter:description" content="Max Sheridan is the author of the novels Dillo and God’s Speedboat and many short stories. From 2015 to 2020, he ran the community creative writing center Write CY in Nicosia, Cyprus, where he also taught short fiction. He lives in Europe with his family.">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "About",
+            "description": "Max Sheridan is the author of the novels Dillo and God’s Speedboat and many short stories. From 2015 to 2020, he ran the community creative writing center Write CY in Nicosia, Cyprus, where he also taught short fiction. He lives in Europe with his family.",
+            "url": "https://maxsheridan.com/about",
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://maxsheridan.com/assets/graphics/max_og.webp",
+                "width": 1200,
+                "height": 630
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to content</a>
+        <header class="linkstyling-off">
+            <hr aria-hidden="true">
+            <h1 class="site-title"><a href="/" aria-label="Max Sheridan home">Max Sheridan</a></h1>
+            <hr aria-hidden="true">
+        </header>
+        <main id="main-content" class="flex" tabindex="-1">
+            <div>
+                <img class="bio" src="/assets/graphics/max.webp"
+                    fetchpriority="high"
+                    width="250"
+                    height="250"
+                    alt="Max Sheridan">
+                <p>Max Sheridan is the author of the novels Dillo and God’s Speedboat and many short stories. From 2015 to 2020, he ran the com&shy;munity creative writing center Write CY in Nicosia, Cyprus, where he also taught short fiction. He lives in Europe with his family.</p>
+            </div>
+        </main>
+        <footer class="linkstyling-off" aria-label="Footer">
+            <ul>
+                <li class="inline-hr big-screen" aria-hidden="true"></li>
+                <li><a href="/stories">Stories</a></li>
+                <li class="inline-hr" aria-hidden="true"></li>
+                <li><a href="/news">News</a></li>
+                <li class="inline-hr" aria-hidden="true"></li>
+                <li><span class="non-clickable" aria-current="page">About</span></li>
+                <li class="inline-hr" aria-hidden="true"></li>
+                <li><button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button></li>
+                <li class="inline-hr big-screen" aria-hidden="true"></li>
+            </ul>
+        </footer>
+        <script>function copyEmail(){const email="max@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="rgb(var(--primary))";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
+    </body>
+</html>
