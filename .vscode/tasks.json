@@ -8,7 +8,7 @@
         "args": [
             "assets/css/style.css",
             "assets/css/critical.css",
-            "assets/css/style_min.css",
+            "assets/css/style.min.css",
             "index.html"
         ],
         "problemMatcher": [],

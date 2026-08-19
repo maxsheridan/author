@@ -3,7 +3,7 @@
 sync_extra_min_css.py
 
 Extracts the minified rules starting from the `.flex` selector from a
-minified style stylesheet and writes them into extra_min.css.
+minified style stylesheet and writes them into extra.min.css.
 """
 
 import argparse
@@ -31,7 +31,7 @@ def sync(source_path: Path, output_path: Path, start_selector: str) -> bool:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source_css", type=Path, help="Minified style.css file")
-    parser.add_argument("output_css", type=Path, help="extra_min.css output file")
+    parser.add_argument("output_css", type=Path, help="extra.min.css output file")
     parser.add_argument(
         "--selector",
         default=".flex",

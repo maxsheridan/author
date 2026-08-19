@@ -2,7 +2,7 @@
 """
 minify_style_css.py
 
-Regenerates style_min.css from style.css whenever style.css changes.
+Regenerates style.min.css from style.css whenever style.css changes.
 
 Note: this is a full regeneration, not a patch. Minifiers always work
 this way (cssnano, clean-css, esbuild, etc.) — they re-minify the whole
@@ -11,10 +11,10 @@ already-minified file, which would be fragile and error-prone.
 
 USAGE:
 
-    python minify_style_css.py style.css style_min.css
+    python minify_style_css.py style.css style.min.css
 
     # Or watch for changes and auto-regenerate on save:
-    python minify_style_css.py style.css style_min.css --watch
+    python minify_style_css.py style.css style.min.css --watch
 
 LIMITATIONS:
 
@@ -60,7 +60,7 @@ def sync(source_path: Path, output_path: Path) -> bool:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source_css", type=Path, help="e.g. style.css")
-    parser.add_argument("output_css", type=Path, help="e.g. style_min.css")
+    parser.add_argument("output_css", type=Path, help="e.g. style.min.css")
     parser.add_argument(
         "--watch", action="store_true", help="Re-minify automatically on save"
     )
