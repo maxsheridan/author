@@ -175,7 +175,7 @@ main {
 }
 
 .headline {
-    margin-block-start: var(--space-1);
+    margin-block-start: calc(var(--space-1) + 4px);
 }
 
 .blurb > * + * {
