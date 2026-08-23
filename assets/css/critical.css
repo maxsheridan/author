@@ -24,7 +24,7 @@
     --ratio: 1.6;
     --space--2: calc(var(--space--1) / var(--ratio));
     --space--1: calc(var(--space-0) / var(--ratio));
-    --space-0: calc(1rem + .5vw);
+    --space-0: calc(1rem + .6vw);
     --space-1: calc(var(--space-0) * var(--ratio));
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-3: calc(var(--space-2) * var(--ratio));
@@ -171,11 +171,11 @@ main {
 
 .blurb:not(.headline),
 .short .blurb+.blurb {
-    margin-block-start: 3em;
+    margin-block-start: var(--space-2);
 }
 
 .headline {
-    margin-block-start: 2em;
+    margin-block-start: var(--space-1);
 }
 
 .blurb > * + * {
@@ -198,7 +198,7 @@ dd {
 }
 
 .info.small-text {
-    margin-block-start: 3.5em;
+    margin-block-start: var(--space-2);
     font-family: var(--body);
     font-size: calc(var(--paragraph) * .9);
     text-transform: none;
