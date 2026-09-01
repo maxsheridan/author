@@ -31,7 +31,7 @@
     --space-4: calc(var(--space-3) * var(--ratio));
     --body: 'Hex Franklin Narrow', 'Fallback', sans-serif;
     --display: 'Big Shoulders', sans-serif;
-    --paragraph: calc(1.06rem + .3vw);
+    --paragraph: calc(1.06rem + .3125vw);
     --primary: 22, 23, 24;
     --highlight: 0, 0, 255;
     --accent: 141, 140, 140;
@@ -76,7 +76,7 @@ body {
     font-family: var(--body);
     font-size: var(--paragraph);
     font-style: normal;
-    line-height: 1.5;
+    line-height: 1.6;
     color: rgb(var(--primary));
     background-color: rgb(var(--background));
 }
