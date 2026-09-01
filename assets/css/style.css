@@ -75,7 +75,7 @@ body {
     font-family: var(--body);
     font-size: var(--paragraph);
     font-style: normal;
-    line-height: 1.6;
+    line-height: 1.55;
     color: rgb(var(--primary));
     background-color: rgb(var(--background));
 }
