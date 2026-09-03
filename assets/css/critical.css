@@ -118,7 +118,6 @@ main {
     column-gap: var(--space-3);
     align-items: center;
     width: 100%;
-    max-width: calc(1440px + 4vw);
     margin: 0 auto;
 }
 
