@@ -118,8 +118,12 @@ main {
     flex: 1;
 }
 
-.flex div > * + *:not(h2, hr, .progress, input) {
+.flex div > *:not(img) + *:not(h2, hr, .progress, input) {
     margin-block-start: var(--space-1);
+}
+
+img + p {
+    margin-block-start: var(--space-0);
 }
 
 h2 ~ h2 {
